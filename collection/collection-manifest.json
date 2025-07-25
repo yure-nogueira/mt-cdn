@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "components/medtango-example/medtango-example.js",
+    "components/title-h1/title-h1.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.36.1",
+    "typescriptVersion": "5.5.4"
+  },
+  "collections": [],
+  "bundles": []
+}

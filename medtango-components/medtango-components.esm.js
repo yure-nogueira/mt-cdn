@@ -1,0 +1,2 @@
+import{p as t,b as e}from"./p-Dalv8umA.js";export{s as setNonce}from"./p-Dalv8umA.js";import{g as a}from"./p-DQuL1Twl.js";var m=()=>{const e=import.meta.url;const a={};if(e!==""){a.resourcesUrl=new URL(".",e).href}return t(a)};m().then((async t=>{await a();return e([["p-30ee5134",[[262,"medtango-example"]]],["p-2d488c9e",[[257,"mt-title-h1"]]]],t)}));
+//# sourceMappingURL=medtango-components.esm.js.map
