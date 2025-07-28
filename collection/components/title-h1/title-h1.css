@@ -1,8 +1,12 @@
+:host(.mt-medcurso-title-h1.mt-car-title-h1.mt-2026-title-h1) .mt-title-h1__pre-title {
+  border: 1px solid red;
+}
+
 :host {
-  --line-color: #9abec0;
-  --pre-title-color: #9a999e;
-  --title-color: #455a5a;
-  --subtitle-color: #607b7a;
+  --mt-title-h1-line-color: #9abec0;
+  --mt-title-h1-pre-title-color: #9a999e;
+  --mt-title-h1-title-color: #455a5a;
+  --mt-title-h1-subtitle-color: #607b7a;
   display: block;
 }
 
@@ -10,7 +14,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 12px;
-  border-left: 12px solid var(--line-color);
+  border-left: 12px solid var(--mt-title-h1-line-color);
 }
 .mt-title-h1__pre-title, .mt-title-h1__title, .mt-title-h1__subtitle {
   margin: 0;
@@ -21,15 +25,15 @@
 }
 .mt-title-h1__pre-title {
   font-size: 16px;
-  color: var(--pre-title-color);
+  color: var(--mt-title-h1-pre-title-color);
 }
 .mt-title-h1__title {
   margin: 4px 0;
   font-weight: 600;
   font-size: 40px;
-  color: var(--title-color);
+  color: var(--mt-title-h1-title-color);
 }
 .mt-title-h1__subtitle {
   font-size: 24px;
-  color: var(--subtitle-color);
+  color: var(--mt-title-h1-subtitle-color);
 }

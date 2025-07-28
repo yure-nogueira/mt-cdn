@@ -6,17 +6,24 @@
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
 export namespace Components {
-    interface MedtangoExample {
+    interface MtGridRow {
+        /**
+          * @default 2
+         */
+        "cols": number;
     }
     interface MtTitleH1 {
+        "ano": '202';
+        "especialidade": 'car' | 'nef';
+        "produto": 'medcurso' | 'med';
     }
 }
 declare global {
-    interface HTMLMedtangoExampleElement extends Components.MedtangoExample, HTMLStencilElement {
+    interface HTMLMtGridRowElement extends Components.MtGridRow, HTMLStencilElement {
     }
-    var HTMLMedtangoExampleElement: {
-        prototype: HTMLMedtangoExampleElement;
-        new (): HTMLMedtangoExampleElement;
+    var HTMLMtGridRowElement: {
+        prototype: HTMLMtGridRowElement;
+        new (): HTMLMtGridRowElement;
     };
     interface HTMLMtTitleH1Element extends Components.MtTitleH1, HTMLStencilElement {
     }
@@ -25,17 +32,24 @@ declare global {
         new (): HTMLMtTitleH1Element;
     };
     interface HTMLElementTagNameMap {
-        "medtango-example": HTMLMedtangoExampleElement;
+        "mt-grid-row": HTMLMtGridRowElement;
         "mt-title-h1": HTMLMtTitleH1Element;
     }
 }
 declare namespace LocalJSX {
-    interface MedtangoExample {
+    interface MtGridRow {
+        /**
+          * @default 2
+         */
+        "cols"?: number;
     }
     interface MtTitleH1 {
+        "ano"?: '202';
+        "especialidade"?: 'car' | 'nef';
+        "produto"?: 'medcurso' | 'med';
     }
     interface IntrinsicElements {
-        "medtango-example": MedtangoExample;
+        "mt-grid-row": MtGridRow;
         "mt-title-h1": MtTitleH1;
     }
 }
@@ -43,7 +57,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "medtango-example": LocalJSX.MedtangoExample & JSXBase.HTMLAttributes<HTMLMedtangoExampleElement>;
+            "mt-grid-row": LocalJSX.MtGridRow & JSXBase.HTMLAttributes<HTMLMtGridRowElement>;
             "mt-title-h1": LocalJSX.MtTitleH1 & JSXBase.HTMLAttributes<HTMLMtTitleH1Element>;
         }
     }

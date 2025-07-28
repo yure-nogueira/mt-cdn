@@ -6,7 +6,7 @@ export default meta;
 export const Default = {
     render: () => {
         return html `
-      <mt-title-h1>
+      <mt-title-h1 produto="medcurso" especialidade="car" ano="2026">
         <span slot="pre-title">Capítulo 00</span>
         <span slot="title">Título H1</span>
         <span slot="subtitle">Subtítulo H1</span>

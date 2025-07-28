@@ -1,6 +1,6 @@
 {
   "entries": [
-    "components/medtango-example/medtango-example.js",
+    "components/grid-row/grid-row.js",
     "components/title-h1/title-h1.js"
   ],
   "compiler": {

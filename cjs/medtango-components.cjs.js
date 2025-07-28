@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-DM3_8Z6I.js');
+var index = require('./index-D889KsCY.js');
 var appGlobals = require('./app-globals-V2Kpy_OQ.js');
 
 var _documentCurrentScript = typeof document !== 'undefined' ? document.currentScript : null;
@@ -19,7 +19,7 @@ var patchBrowser = () => {
 
 patchBrowser().then(async (options) => {
   await appGlobals.globalScripts();
-  return index.bootstrapLazy([["medtango-example.cjs",[[262,"medtango-example"]]],["mt-title-h1.cjs",[[257,"mt-title-h1"]]]], options);
+  return index.bootstrapLazy([["mt-grid-row.cjs",[[257,"mt-grid-row",{"cols":[2]}]]],["mt-title-h1.cjs",[[262,"mt-title-h1",{"produto":[513],"especialidade":[513],"ano":[513]}]]]], options);
 });
 
 exports.setNonce = index.setNonce;

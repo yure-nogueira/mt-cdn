@@ -1,9 +1,9 @@
 import type { Components, JSX } from "../types/components";
 
-interface MedtangoExample extends Components.MedtangoExample, HTMLElement {}
-export const MedtangoExample: {
-    prototype: MedtangoExample;
-    new (): MedtangoExample;
+interface MtGridRow extends Components.MtGridRow, HTMLElement {}
+export const MtGridRow: {
+    prototype: MtGridRow;
+    new (): MtGridRow;
 };
 /**
  * Used to define this component and all nested components recursively.

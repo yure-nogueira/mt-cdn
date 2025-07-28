@@ -1,18 +1,39 @@
 import { p as proxyCustomElement, H, h, a as Host } from './index.js';
 
-const titleH1Css = ":host{--line-color:#9abec0;--pre-title-color:#9a999e;--title-color:#455a5a;--subtitle-color:#607b7a;display:block}.mt-title-h1{display:flex;flex-direction:column;padding-left:12px;border-left:12px solid var(--line-color)}.mt-title-h1__pre-title,.mt-title-h1__title,.mt-title-h1__subtitle{margin:0;text-transform:uppercase;font-family:\"Roboto\", sans-serif;font-weight:300;line-height:1}.mt-title-h1__pre-title{font-size:16px;color:var(--pre-title-color)}.mt-title-h1__title{margin:4px 0;font-weight:600;font-size:40px;color:var(--title-color)}.mt-title-h1__subtitle{font-size:24px;color:var(--subtitle-color)}";
+const titleH1Css = ".mt-medcurso-title-h1.mt-car-title-h1.mt-2026-title-h1.sc-mt-title-h1-h .mt-title-h1__pre-title.sc-mt-title-h1{border:1px solid red}.sc-mt-title-h1-h{--mt-title-h1-line-color:#9abec0;--mt-title-h1-pre-title-color:#9a999e;--mt-title-h1-title-color:#455a5a;--mt-title-h1-subtitle-color:#607b7a;display:block}.mt-title-h1.sc-mt-title-h1{display:flex;flex-direction:column;padding-left:12px;border-left:12px solid var(--mt-title-h1-line-color)}.mt-title-h1__pre-title.sc-mt-title-h1,.mt-title-h1__title.sc-mt-title-h1,.mt-title-h1__subtitle.sc-mt-title-h1{margin:0;text-transform:uppercase;font-family:\"Roboto\", sans-serif;font-weight:300;line-height:1}.mt-title-h1__pre-title.sc-mt-title-h1{font-size:16px;color:var(--mt-title-h1-pre-title-color)}.mt-title-h1__title.sc-mt-title-h1{margin:4px 0;font-weight:600;font-size:40px;color:var(--mt-title-h1-title-color)}.mt-title-h1__subtitle.sc-mt-title-h1{font-size:24px;color:var(--mt-title-h1-subtitle-color)}";
 
+const generateClasses = (produto, // MtProdutos | undefined | null,
+especialidade, // MtMedcursoEspecialidade | undefined | null,
+ano, component, cssClassMap) => {
+    return typeof produto === 'string' && produto.length > 0
+        ? {
+            [`mt-${produto}-${component}`]: true,
+            [`mt-${especialidade}-${component}`]: true,
+            [`mt-${ano}-${component}`]: true,
+            ...cssClassMap,
+        }
+        : cssClassMap;
+};
 const TitleH1 = /*@__PURE__*/ proxyCustomElement(class TitleH1 extends H {
     constructor() {
         super();
         this.__registerHost();
-        this.__attachShadow();
     }
+    produto; // MtProdutos
+    especialidade; // MtMedcursoEspecialidade
+    ano;
     render() {
-        return (h(Host, { key: '6b414ccac32e374b3f07cdef85b619be708d6d73' }, h("div", { key: 'de5cd145d703a252cfa2e1b6741d6dd5bb22f667', class: "mt-title-h1" }, h("p", { key: 'c45bb167930bfbdb6546aa7e75d591c7aaa6d832', class: "mt-title-h1__pre-title" }, h("slot", { key: '842121643e63d65016f335b7f920e7ed71a51b60', name: "pre-title" })), h("h1", { key: '2c26203da16fdc45e7e8c012d87b48e033558893', class: "mt-title-h1__title" }, h("slot", { key: '4263a746267ecd5ee46c729473136b08fd8ba996', name: "title" })), h("h2", { key: 'b5c9c8ea023eef237a3257c4598edeb46db89039', class: "mt-title-h1__subtitle" }, h("slot", { key: 'dc48d656b62869a6018bd45bb2f03df9b88bbe6f', name: "subtitle" })))));
+        const { produto, especialidade, ano } = this;
+        return (h(Host, { key: '4a91fca3e99216ec059b27c74bc6243ad1ee05f6', class: generateClasses(produto, especialidade, ano, 'title-h1', {
+                'mt-title-h1': true,
+            }) }, h("p", { key: 'eef1d7894f5be238b1e146beef80dee54254deeb', class: "mt-title-h1__pre-title" }, h("slot", { key: 'ad69250ac18cbcc315dacd7efda5cbfc4c2020ee', name: "pre-title" })), h("h1", { key: 'd3c7cd38e55ced6b71d5425c3470711632a56166', class: "mt-title-h1__title" }, h("slot", { key: '0bda99489551a0ad64f016bd5b72abd679ce247f', name: "title" })), h("h2", { key: '7863b4636904309557db53e03fc84b2b8c738600', class: "mt-title-h1__subtitle" }, h("slot", { key: '3822d78eafcd30c5ab98a7c2e2149b043662a858', name: "subtitle" }))));
     }
     static get style() { return titleH1Css; }
-}, [257, "mt-title-h1"]);
+}, [262, "mt-title-h1", {
+        "produto": [513],
+        "especialidade": [513],
+        "ano": [513]
+    }]);
 function defineCustomElement$1() {
     if (typeof customElements === "undefined") {
         return;
