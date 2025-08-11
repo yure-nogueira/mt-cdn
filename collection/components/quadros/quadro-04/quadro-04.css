@@ -1,0 +1,34 @@
+:host {
+  --mt-quadro-04-border: 2px dotted var(--mt-color-quadros-linha-01);
+  --mt-quadro-04-left-margin: 0 6px 0 0;
+  --mt-quadro-04-inner-container-padding: 12px;
+  --mt-quadro-04-text-color: var(--mt-color-quadros-fonte-02);
+  --mt-quadro-04-text-font-family: "Noto Sans", sans-serif;
+  --mt-quadro-04-text-font-weight: 500;
+  --mt-quadro-04-text-text-transform: none;
+  --mt-quadro-04-text-font-size: 16px;
+  --mt-quadro-04-text-background-color: var(--mt-color-quadros-bg-02);
+  display: block;
+}
+
+.mt-quadro-04__container {
+  background-color: var(--mt-quadro-04-background-color);
+  display: flex;
+  align-items: center;
+  border: var(--mt-quadro-04-border);
+}
+.mt-quadro-04__left {
+  margin: var(--mt-quadro-04-left-margin);
+}
+.mt-quadro-04__inner-container {
+  padding: var(--mt-quadro-04-inner-container-padding);
+}
+.mt-quadro-04__text {
+  color: var(--mt-quadro-04-text-color);
+  font-family: var(--mt-quadro-04-text-font-family);
+  font-weight: var(--mt-quadro-04-text-font-weight);
+  text-transform: var(--mt-quadro-04-text-text-transform);
+  font-size: var(--mt-quadro-04-text-font-size);
+  line-height: 1;
+  margin: 0;
+}

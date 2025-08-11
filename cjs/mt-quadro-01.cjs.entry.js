@@ -1,0 +1,27 @@
+'use strict';
+
+var index = require('./index-D-YE1rsj.js');
+var functions = require('./functions-DWyFPlQy.js');
+
+const quadro01Css = ".sc-mt-quadro-01-h{--mt-quadro-01-span-color:var(--mt-color-quadros-fonte-01);--mt-quadro-01-span-font-family:\"Noto Sans\", sans-serif;--mt-quadro-01-span-font-weight:900;--mt-quadro-01-span-text-transform:uppercase;--mt-quadro-01-span-font-size:16px;--mt-quadro-01-span-padding:6px;--mt-quadro-01-span-background-color:var(--mt-color-quadros-bg-01);--mt-quadro-01-container-border:2px solid var(--mt-color-quadros-fonte-02);--mt-quadro-01-text-color:var(--mt-color-quadros-fonte-02);--mt-quadro-01-text-font-family:\"Noto Sans\", sans-serif;--mt-quadro-01-text-font-weight:500;--mt-quadro-01-text-text-transform:none;--mt-quadro-01-text-font-size:16px;--mt-quadro-01-text-padding:6px;display:block}.mt-quadro-01__container.sc-mt-quadro-01{border-left:var(--mt-quadro-01-container-border)}.mt-quadro-01__span.sc-mt-quadro-01{color:var(--mt-quadro-01-span-color);font-family:var(--mt-quadro-01-span-font-family);font-weight:var(--mt-quadro-01-span-font-weight);text-transform:var(--mt-quadro-01-span-text-transform);font-size:var(--mt-quadro-01-span-font-size);line-height:1;margin:0;padding:var(--mt-quadro-01-span-padding);background-color:var(--mt-quadro-01-span-background-color);display:inline-block;border-left:var(--mt-quadro-01-container-border)}.mt-quadro-01__text.sc-mt-quadro-01{color:var(--mt-quadro-01-text-color);font-family:var(--mt-quadro-01-text-font-family);font-weight:var(--mt-quadro-01-text-font-weight);text-transform:var(--mt-quadro-01-text-text-transform);font-size:var(--mt-quadro-01-text-font-size);line-height:1;margin:0;padding:var(--mt-quadro-01-text-padding)}";
+
+const Quadro01 = class {
+    constructor(hostRef) {
+        index.registerInstance(this, hostRef);
+    }
+    produto;
+    especialidade;
+    ano;
+    render() {
+        const { produto, especialidade, ano } = this;
+        return (index.h(index.Host, { key: 'e42a3639c457e50f96b5f64ab1ba8f13a6689685', class: functions.generateClasses(produto, especialidade, ano, {
+                'mt-quadro-01': true,
+            }) }, index.h("div", { key: '417700abdb5e649fbf1511f88b7a4c8432929288', class: "mt-quadro-01__container" }, index.h("span", { key: 'e625ba3cf72d281fae3e4440cb491bce2da954f5', class: "mt-quadro-01__span" }, index.h("slot", { key: 'fd483a5044b9f0a30dbf0f1bdf085c0caf7e6957', name: "span" })), index.h("p", { key: 'ba2c3e456bf17d04d859bb6530ed92144d6241cd', class: "mt-quadro-01__text" }, index.h("slot", { key: 'e6445cea646549fbeb118c1c0e316af14ee0ff84' })))));
+    }
+};
+Quadro01.style = quadro01Css;
+
+exports.mt_quadro_01 = Quadro01;
+//# sourceMappingURL=mt-quadro-01.entry.cjs.js.map
+
+//# sourceMappingURL=mt-quadro-01.cjs.entry.js.map

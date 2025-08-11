@@ -1,0 +1,33 @@
+:host {
+  --mt-quadro-02-left-margin: 0 6px 0 0;
+  --mt-quadro-02-text-color: var(--mt-color-quadros-fonte-02);
+  --mt-quadro-02-text-font-family: "Noto Sans", sans-serif;
+  --mt-quadro-02-text-font-weight: 500;
+  --mt-quadro-02-text-text-transform: none;
+  --mt-quadro-02-text-font-size: 16px;
+  --mt-quadro-02-inner-container-padding: 12px;
+  --mt-quadro-02-inner-container-background-color: var(--mt-color-quadros-bg-02);
+  display: block;
+}
+
+.mt-quadro-02__container {
+  display: flex;
+  align-items: center;
+}
+.mt-quadro-02__left {
+  margin: var(--mt-quadro-02-left-margin);
+}
+.mt-quadro-02__inner-container {
+  padding: var(--mt-quadro-02-inner-container-padding);
+  background-color: var(--mt-quadro-02-inner-container-background-color);
+  flex: 1;
+}
+.mt-quadro-02__text {
+  color: var(--mt-quadro-02-text-color);
+  font-family: var(--mt-quadro-02-text-font-family);
+  font-weight: var(--mt-quadro-02-text-font-weight);
+  text-transform: var(--mt-quadro-02-text-text-transform);
+  font-size: var(--mt-quadro-02-text-font-size);
+  line-height: 1;
+  margin: 0;
+}
