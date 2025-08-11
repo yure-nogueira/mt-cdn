@@ -28,5 +28,4 @@ r().then(async (a) => {
     a
   );
 });
-alert('ABABABABAB');
 //# sourceMappingURL=medtango-components.esm.js.map
