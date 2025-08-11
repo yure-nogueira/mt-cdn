@@ -1,22 +1,11 @@
 {
   "entries": [
-    "components/quadros/quadro-01/quadro-01.js",
-    "components/quadros/quadro-02/quadro-02.js",
-    "components/quadros/quadro-03/quadro-03.js",
-    "components/quadros/quadro-04/quadro-04.js",
-    "components/quadros/quadro-05/quadro-05.js",
-    "components/quadros/quadro-06/quadro-06.js",
-    "components/textos/paragrafos/paragrafo.js",
-    "components/titulos/titulo-h1/titulo-h1.js",
-    "components/titulos/titulo-h2/titulo-h2.js",
-    "components/titulos/titulo-h3/titulo-h3.js",
-    "components/titulos/titulo-h4/titulo-h4.js",
-    "components/titulos/titulo-h5/titulo-h5.js",
-    "components/titulos/titulo-resumo/titulo-resumo.js"
+    "components/grid-row/grid-row.js",
+    "components/title-h1/title-h1.js"
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "4.36.2",
+    "version": "4.36.1",
     "typescriptVersion": "5.5.4"
   },
   "collections": [],

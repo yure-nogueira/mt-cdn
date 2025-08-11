@@ -1,11 +1,11 @@
 'use strict';
 
-var index = require('./index-D-YE1rsj.js');
+var index = require('./index-D889KsCY.js');
 var appGlobals = require('./app-globals-V2Kpy_OQ.js');
 
 var _documentCurrentScript = typeof document !== 'undefined' ? document.currentScript : null;
 /*
- Stencil Client Patch Browser v4.36.2 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch Browser v4.36.1 | MIT Licensed | https://stenciljs.com
  */
 
 var patchBrowser = () => {
@@ -19,7 +19,7 @@ var patchBrowser = () => {
 
 patchBrowser().then(async (options) => {
   await appGlobals.globalScripts();
-  return index.bootstrapLazy([["mt-paragrafo.cjs",[[262,"mt-paragrafo",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-quadro-01.cjs",[[262,"mt-quadro-01",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-quadro-02.cjs",[[262,"mt-quadro-02",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-quadro-03.cjs",[[262,"mt-quadro-03",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-quadro-04.cjs",[[262,"mt-quadro-04",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-quadro-05.cjs",[[262,"mt-quadro-05",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-quadro-06.cjs",[[262,"mt-quadro-06",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-titulo-h1.cjs",[[262,"mt-titulo-h1",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-titulo-h2.cjs",[[262,"mt-titulo-h2",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-titulo-h3.cjs",[[262,"mt-titulo-h3",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-titulo-h4.cjs",[[262,"mt-titulo-h4",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-titulo-h5.cjs",[[262,"mt-titulo-h5",{"produto":[513],"especialidade":[513],"ano":[513]}]]],["mt-titulo-resumo.cjs",[[262,"mt-titulo-resumo",{"produto":[513],"especialidade":[513],"ano":[513]}]]]], options);
+  return index.bootstrapLazy([["mt-grid-row.cjs",[[257,"mt-grid-row",{"cols":[2]}]]],["mt-title-h1.cjs",[[262,"mt-title-h1",{"produto":[513],"especialidade":[513],"ano":[513]}]]]], options);
 });
 
 exports.setNonce = index.setNonce;
