@@ -1,2 +1,152 @@
-import{p as a,b as o}from"./p-Cs-n2LsI.js";export{s as setNonce}from"./p-Cs-n2LsI.js";import{g as e}from"./p-DQuL1Twl.js";var t=()=>{const o=import.meta.url;const e={};if(o!==""){e.resourcesUrl=new URL(".",o).href}return a(e)};t().then((async a=>{await e();return o([["p-a9b0024b",[[262,"mt-paragrafo",{produto:[513],especialidade:[513],ano:[513]}]]],["p-95877061",[[262,"mt-quadro-01",{produto:[513],especialidade:[513],ano:[513]}]]],["p-d8dc897a",[[262,"mt-quadro-02",{produto:[513],especialidade:[513],ano:[513]}]]],["p-043f92f2",[[262,"mt-quadro-03",{produto:[513],especialidade:[513],ano:[513]}]]],["p-e08a10e4",[[262,"mt-quadro-04",{produto:[513],especialidade:[513],ano:[513]}]]],["p-2486ac3e",[[262,"mt-quadro-05",{produto:[513],especialidade:[513],ano:[513]}]]],["p-84260702",[[262,"mt-quadro-06",{produto:[513],especialidade:[513],ano:[513]}]]],["p-b5aa62b8",[[262,"mt-titulo-h1",{produto:[513],especialidade:[513],ano:[513]}]]],["p-0296758a",[[262,"mt-titulo-h2",{produto:[513],especialidade:[513],ano:[513]}]]],["p-26bd31cc",[[262,"mt-titulo-h3",{produto:[513],especialidade:[513],ano:[513]}]]],["p-aae49f9c",[[262,"mt-titulo-h4",{produto:[513],especialidade:[513],ano:[513]}]]],["p-9fc4ccc4",[[262,"mt-titulo-h5",{produto:[513],especialidade:[513],ano:[513]}]]],["p-0c2847e8",[[262,"mt-titulo-resumo",{produto:[513],especialidade:[513],ano:[513]}]]]],a)}));
+import { p as a, b as o } from './p-Cs-n2LsI.js';
+export { s as setNonce } from './p-Cs-n2LsI.js';
+import { g as e } from './p-DQuL1Twl.js';
+var t = () => {
+  const o = import.meta.url;
+  const e = {};
+  if (o !== '') {
+    e.resourcesUrl = new URL('.', o).href;
+  }
+  return a(e);
+};
+t().then(async (a) => {
+  await e();
+  return o(
+    [
+      [
+        'p-a9b0024b',
+        [
+          [
+            262,
+            'mt-paragrafo',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-95877061',
+        [
+          [
+            262,
+            'mt-quadro-01',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-d8dc897a',
+        [
+          [
+            262,
+            'mt-quadro-02',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-043f92f2',
+        [
+          [
+            262,
+            'mt-quadro-03',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-e08a10e4',
+        [
+          [
+            262,
+            'mt-quadro-04',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-2486ac3e',
+        [
+          [
+            262,
+            'mt-quadro-05',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-84260702',
+        [
+          [
+            262,
+            'mt-quadro-06',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-b5aa62b8',
+        [
+          [
+            262,
+            'mt-titulo-h1',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-0296758a',
+        [
+          [
+            262,
+            'mt-titulo-h2',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-26bd31cc',
+        [
+          [
+            262,
+            'mt-titulo-h3',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-aae49f9c',
+        [
+          [
+            262,
+            'mt-titulo-h4',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-9fc4ccc4',
+        [
+          [
+            262,
+            'mt-titulo-h5',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ],
+      [
+        'p-0c2847e8',
+        [
+          [
+            262,
+            'mt-titulo-resumo',
+            { produto: [513], especialidade: [513], ano: [513] }
+          ]
+        ]
+      ]
+    ],
+    a
+  );
+});
+console.log('AAAAAAAAAAAAAa');
+alert('AAAAAAAAAAAAAAAAA');
 //# sourceMappingURL=medtango-components.esm.js.map
