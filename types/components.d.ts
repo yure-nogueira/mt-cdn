@@ -5,60 +5,269 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
+import { MtAnos, MtEspecialidades, MtProdutos } from "./global/typescript/types";
+export { MtAnos, MtEspecialidades, MtProdutos } from "./global/typescript/types";
 export namespace Components {
-    interface MtGridRow {
-        /**
-          * @default 2
-         */
-        "cols": number;
+    interface MtParagrafo {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
     }
-    interface MtTitleH1 {
-        "ano": '202';
-        "especialidade": 'car' | 'nef';
-        "produto": 'medcurso' | 'med';
+    interface MtQuadro01 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtQuadro02 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtQuadro03 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtQuadro04 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtQuadro05 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtQuadro06 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtTituloH1 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtTituloH2 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtTituloH3 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtTituloH4 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtTituloH5 {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
+    }
+    interface MtTituloResumo {
+        "ano": MtAnos;
+        "especialidade": MtEspecialidades;
+        "produto": MtProdutos;
     }
 }
 declare global {
-    interface HTMLMtGridRowElement extends Components.MtGridRow, HTMLStencilElement {
+    interface HTMLMtParagrafoElement extends Components.MtParagrafo, HTMLStencilElement {
     }
-    var HTMLMtGridRowElement: {
-        prototype: HTMLMtGridRowElement;
-        new (): HTMLMtGridRowElement;
+    var HTMLMtParagrafoElement: {
+        prototype: HTMLMtParagrafoElement;
+        new (): HTMLMtParagrafoElement;
     };
-    interface HTMLMtTitleH1Element extends Components.MtTitleH1, HTMLStencilElement {
+    interface HTMLMtQuadro01Element extends Components.MtQuadro01, HTMLStencilElement {
     }
-    var HTMLMtTitleH1Element: {
-        prototype: HTMLMtTitleH1Element;
-        new (): HTMLMtTitleH1Element;
+    var HTMLMtQuadro01Element: {
+        prototype: HTMLMtQuadro01Element;
+        new (): HTMLMtQuadro01Element;
+    };
+    interface HTMLMtQuadro02Element extends Components.MtQuadro02, HTMLStencilElement {
+    }
+    var HTMLMtQuadro02Element: {
+        prototype: HTMLMtQuadro02Element;
+        new (): HTMLMtQuadro02Element;
+    };
+    interface HTMLMtQuadro03Element extends Components.MtQuadro03, HTMLStencilElement {
+    }
+    var HTMLMtQuadro03Element: {
+        prototype: HTMLMtQuadro03Element;
+        new (): HTMLMtQuadro03Element;
+    };
+    interface HTMLMtQuadro04Element extends Components.MtQuadro04, HTMLStencilElement {
+    }
+    var HTMLMtQuadro04Element: {
+        prototype: HTMLMtQuadro04Element;
+        new (): HTMLMtQuadro04Element;
+    };
+    interface HTMLMtQuadro05Element extends Components.MtQuadro05, HTMLStencilElement {
+    }
+    var HTMLMtQuadro05Element: {
+        prototype: HTMLMtQuadro05Element;
+        new (): HTMLMtQuadro05Element;
+    };
+    interface HTMLMtQuadro06Element extends Components.MtQuadro06, HTMLStencilElement {
+    }
+    var HTMLMtQuadro06Element: {
+        prototype: HTMLMtQuadro06Element;
+        new (): HTMLMtQuadro06Element;
+    };
+    interface HTMLMtTituloH1Element extends Components.MtTituloH1, HTMLStencilElement {
+    }
+    var HTMLMtTituloH1Element: {
+        prototype: HTMLMtTituloH1Element;
+        new (): HTMLMtTituloH1Element;
+    };
+    interface HTMLMtTituloH2Element extends Components.MtTituloH2, HTMLStencilElement {
+    }
+    var HTMLMtTituloH2Element: {
+        prototype: HTMLMtTituloH2Element;
+        new (): HTMLMtTituloH2Element;
+    };
+    interface HTMLMtTituloH3Element extends Components.MtTituloH3, HTMLStencilElement {
+    }
+    var HTMLMtTituloH3Element: {
+        prototype: HTMLMtTituloH3Element;
+        new (): HTMLMtTituloH3Element;
+    };
+    interface HTMLMtTituloH4Element extends Components.MtTituloH4, HTMLStencilElement {
+    }
+    var HTMLMtTituloH4Element: {
+        prototype: HTMLMtTituloH4Element;
+        new (): HTMLMtTituloH4Element;
+    };
+    interface HTMLMtTituloH5Element extends Components.MtTituloH5, HTMLStencilElement {
+    }
+    var HTMLMtTituloH5Element: {
+        prototype: HTMLMtTituloH5Element;
+        new (): HTMLMtTituloH5Element;
+    };
+    interface HTMLMtTituloResumoElement extends Components.MtTituloResumo, HTMLStencilElement {
+    }
+    var HTMLMtTituloResumoElement: {
+        prototype: HTMLMtTituloResumoElement;
+        new (): HTMLMtTituloResumoElement;
     };
     interface HTMLElementTagNameMap {
-        "mt-grid-row": HTMLMtGridRowElement;
-        "mt-title-h1": HTMLMtTitleH1Element;
+        "mt-paragrafo": HTMLMtParagrafoElement;
+        "mt-quadro-01": HTMLMtQuadro01Element;
+        "mt-quadro-02": HTMLMtQuadro02Element;
+        "mt-quadro-03": HTMLMtQuadro03Element;
+        "mt-quadro-04": HTMLMtQuadro04Element;
+        "mt-quadro-05": HTMLMtQuadro05Element;
+        "mt-quadro-06": HTMLMtQuadro06Element;
+        "mt-titulo-h1": HTMLMtTituloH1Element;
+        "mt-titulo-h2": HTMLMtTituloH2Element;
+        "mt-titulo-h3": HTMLMtTituloH3Element;
+        "mt-titulo-h4": HTMLMtTituloH4Element;
+        "mt-titulo-h5": HTMLMtTituloH5Element;
+        "mt-titulo-resumo": HTMLMtTituloResumoElement;
     }
 }
 declare namespace LocalJSX {
-    interface MtGridRow {
-        /**
-          * @default 2
-         */
-        "cols"?: number;
+    interface MtParagrafo {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
     }
-    interface MtTitleH1 {
-        "ano"?: '202';
-        "especialidade"?: 'car' | 'nef';
-        "produto"?: 'medcurso' | 'med';
+    interface MtQuadro01 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtQuadro02 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtQuadro03 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtQuadro04 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtQuadro05 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtQuadro06 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtTituloH1 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtTituloH2 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtTituloH3 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtTituloH4 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtTituloH5 {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
+    }
+    interface MtTituloResumo {
+        "ano"?: MtAnos;
+        "especialidade"?: MtEspecialidades;
+        "produto"?: MtProdutos;
     }
     interface IntrinsicElements {
-        "mt-grid-row": MtGridRow;
-        "mt-title-h1": MtTitleH1;
+        "mt-paragrafo": MtParagrafo;
+        "mt-quadro-01": MtQuadro01;
+        "mt-quadro-02": MtQuadro02;
+        "mt-quadro-03": MtQuadro03;
+        "mt-quadro-04": MtQuadro04;
+        "mt-quadro-05": MtQuadro05;
+        "mt-quadro-06": MtQuadro06;
+        "mt-titulo-h1": MtTituloH1;
+        "mt-titulo-h2": MtTituloH2;
+        "mt-titulo-h3": MtTituloH3;
+        "mt-titulo-h4": MtTituloH4;
+        "mt-titulo-h5": MtTituloH5;
+        "mt-titulo-resumo": MtTituloResumo;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "mt-grid-row": LocalJSX.MtGridRow & JSXBase.HTMLAttributes<HTMLMtGridRowElement>;
-            "mt-title-h1": LocalJSX.MtTitleH1 & JSXBase.HTMLAttributes<HTMLMtTitleH1Element>;
+            "mt-paragrafo": LocalJSX.MtParagrafo & JSXBase.HTMLAttributes<HTMLMtParagrafoElement>;
+            "mt-quadro-01": LocalJSX.MtQuadro01 & JSXBase.HTMLAttributes<HTMLMtQuadro01Element>;
+            "mt-quadro-02": LocalJSX.MtQuadro02 & JSXBase.HTMLAttributes<HTMLMtQuadro02Element>;
+            "mt-quadro-03": LocalJSX.MtQuadro03 & JSXBase.HTMLAttributes<HTMLMtQuadro03Element>;
+            "mt-quadro-04": LocalJSX.MtQuadro04 & JSXBase.HTMLAttributes<HTMLMtQuadro04Element>;
+            "mt-quadro-05": LocalJSX.MtQuadro05 & JSXBase.HTMLAttributes<HTMLMtQuadro05Element>;
+            "mt-quadro-06": LocalJSX.MtQuadro06 & JSXBase.HTMLAttributes<HTMLMtQuadro06Element>;
+            "mt-titulo-h1": LocalJSX.MtTituloH1 & JSXBase.HTMLAttributes<HTMLMtTituloH1Element>;
+            "mt-titulo-h2": LocalJSX.MtTituloH2 & JSXBase.HTMLAttributes<HTMLMtTituloH2Element>;
+            "mt-titulo-h3": LocalJSX.MtTituloH3 & JSXBase.HTMLAttributes<HTMLMtTituloH3Element>;
+            "mt-titulo-h4": LocalJSX.MtTituloH4 & JSXBase.HTMLAttributes<HTMLMtTituloH4Element>;
+            "mt-titulo-h5": LocalJSX.MtTituloH5 & JSXBase.HTMLAttributes<HTMLMtTituloH5Element>;
+            "mt-titulo-resumo": LocalJSX.MtTituloResumo & JSXBase.HTMLAttributes<HTMLMtTituloResumoElement>;
         }
     }
 }

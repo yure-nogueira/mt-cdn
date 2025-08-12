@@ -1,8 +1,8 @@
 const NAMESPACE = 'medtango-components';
-const BUILD = /* medtango-components */ { hydratedSelectorName: "hydrated", lazyLoad: false, slotRelocation: true, updatable: true, watchCallback: false };
+const BUILD = /* medtango-components */ { hydratedSelectorName: "hydrated", lazyLoad: false, shadowDom: false, slotRelocation: true, updatable: true, watchCallback: false };
 
 /*
- Stencil Client Platform v4.36.1 | MIT Licensed | https://stenciljs.com
+ Stencil Client Platform v4.36.2 | MIT Licensed | https://stenciljs.com
  */
 var __defProp = Object.defineProperty;
 var __export = (target, all) => {
@@ -78,6 +78,7 @@ var plt = {
   rel: (el, eventName, listener, opts) => el.removeEventListener(eventName, listener, opts),
   ce: (eventName, opts) => new CustomEvent(eventName, opts)
 };
+var supportsShadow = BUILD.shadowDom;
 var promiseResolve = (v) => Promise.resolve(v);
 var supportsConstructableStylesheets = /* @__PURE__ */ (() => {
   try {
@@ -197,26 +198,6 @@ var unwrapErr = (result) => {
     throw result.value;
   }
 };
-
-// src/utils/style.ts
-function createStyleSheetIfNeededAndSupported(styles2) {
-  return void 0;
-}
-
-// src/utils/shadow-root.ts
-var globalStyleSheet;
-function createShadowRoot(cmpMeta) {
-  var _a;
-  const shadowRoot = this.attachShadow({ mode: "open" });
-  if (globalStyleSheet === void 0) globalStyleSheet = (_a = createStyleSheetIfNeededAndSupported()) != null ? _a : null;
-  if (globalStyleSheet) {
-    if (supportsMutableAdoptedStyleSheets) {
-      shadowRoot.adoptedStyleSheets.push(globalStyleSheet);
-    } else {
-      shadowRoot.adoptedStyleSheets = [...shadowRoot.adoptedStyleSheets, globalStyleSheet];
-    }
-  }
-}
 var updateFallbackSlotVisibility = (elm) => {
   const childNodes = internalCall(elm, "childNodes");
   if (elm.tagName && elm.tagName.includes("-") && elm["s-cr"] && elm.tagName !== "SLOT-FB") {
@@ -425,7 +406,7 @@ var attachStyles = (hostRef) => {
   const flags = cmpMeta.$flags$;
   const endAttachStyles = createTime("attachStyles", cmpMeta.$tagName$);
   const scopeId2 = addStyle(
-    elm.shadowRoot ? elm.shadowRoot : elm.getRootNode(),
+    elm.getRootNode(),
     cmpMeta);
   if (flags & 10 /* needsScopedEncapsulation */) {
     elm["s-sc"] = scopeId2;
@@ -521,10 +502,13 @@ createSupportsRuleRe("::slotted");
 createSupportsRuleRe(":host");
 createSupportsRuleRe(":host-context");
 var parsePropertyValue = (propValue, propType, isFormAssociated) => {
-  if (propValue != null && !isComplexType(propValue)) {
-    if (propType & 2 /* Number */) {
-      return typeof propValue === "string" ? parseFloat(propValue) : typeof propValue === "number" ? propValue : NaN;
+  if (typeof propValue === "string" && (propType & 16 /* Unknown */ || propType & 8 /* Any */) && (propValue.startsWith("{") && propValue.endsWith("}") || propValue.startsWith("[") && propValue.endsWith("]"))) {
+    try {
+      return JSON.parse(propValue);
+    } catch (e) {
     }
+  }
+  if (propValue != null && !isComplexType(propValue)) {
     if (propType & 1 /* String */) {
       return String(propValue);
     }
@@ -738,9 +722,6 @@ var putBackInOriginalLocation = (parentElm, recursive) => {
 var addVnodes = (parentElm, before, parentVNode, vnodes, startIdx, endIdx) => {
   let containerElm = parentElm["s-cr"] && parentElm["s-cr"].parentNode || parentElm;
   let childNode;
-  if (containerElm.shadowRoot && containerElm.tagName === hostTagName) {
-    containerElm = containerElm.shadowRoot;
-  }
   for (; startIdx <= endIdx; ++startIdx) {
     if (vnodes[startIdx]) {
       childNode = createElm(null, parentVNode, startIdx);
@@ -1012,11 +993,11 @@ var renderVdom = (hostRef, renderFnResults, isInitialLoad = false) => {
   rootVnode.$tag$ = null;
   rootVnode.$flags$ |= 4 /* isHost */;
   hostRef.$vnode$ = rootVnode;
-  rootVnode.$elm$ = oldVNode.$elm$ = hostElm.shadowRoot || hostElm ;
+  rootVnode.$elm$ = oldVNode.$elm$ = hostElm;
   {
     scopeId = hostElm["s-sc"];
   }
-  useNativeShadowDom = !!(cmpMeta.$flags$ & 1 /* shadowDomEncapsulation */) && !(cmpMeta.$flags$ & 128 /* shadowNeedsScopedCss */);
+  useNativeShadowDom = supportsShadow;
   {
     contentRef = hostElm["s-cr"];
     checkSlotFallbackVisibility = false;
@@ -1524,15 +1505,7 @@ var proxyCustomElement = (Cstr, compactMeta) => {
     },
     __attachShadow() {
       {
-        if (!this.shadowRoot) {
-          createShadowRoot.call(this, cmpMeta);
-        } else {
-          if (this.shadowRoot.mode !== "open") {
-            throw new Error(
-              `Unable to re-use existing shadow root for ${cmpMeta.$tagName$}! Mode is set to ${this.shadowRoot.mode} but Stencil only supports open shadow roots.`
-            );
-          }
-        }
+        this.shadowRoot = this;
       }
     }
   });
