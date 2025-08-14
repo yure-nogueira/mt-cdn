@@ -1,14 +1,17 @@
 import { h, Host } from "@stencil/core";
 import { generateClasses } from "../../../global/typescript/functions";
+import { markdown } from "./utilities/functions";
 export class TituloH1 {
     produto;
-    especialidade;
+    apostila;
     ano;
+    especialidade;
+    parte;
     render() {
-        const { produto, especialidade, ano } = this;
-        return (h(Host, { key: '4e543ec44167f1972bd6bc36a8d9ba27425a77ef', class: generateClasses(produto, especialidade, ano, {
+        const { produto, especialidade, apostila, parte, ano } = this;
+        return (h(Host, { key: '2554e8a651b61ffa074d6c7ccb5c60b2f9c08b35', class: generateClasses(produto, apostila, ano, especialidade, parte, {
                 'mt-titulo-h1': true,
-            }) }, h("div", { key: 'dca76ef7066ac092e98549e71c40a960cfaf909b', class: "mt-titulo-h1__container" }, h("div", { key: '85be230c91be3a2eb47d633c2a4e91f80f2ad95f', class: "mt-titulo-h1__line" }), h("div", { key: 'd1b7c8147aa87e00e02d39723472634338d383db', class: "mt-titulo-h1__inner-container" }, h("p", { key: 'd2a9268ad2a77a6c3d306d4633a62c1cef069a16', class: "mt-titulo-h1__pre-title" }, h("slot", { key: '780be393166f6b6efdba4356be026add381c49f7', name: "pre-title" })), h("h1", { key: '1fbff1bc7f23f1e35b3c88e98a5281e860c10f91', class: "mt-titulo-h1__title" }, h("slot", { key: 'fc4d91c73049430d7e7e6d3cbb97bd3bc586cd99', name: "title" })), h("h2", { key: '25c8f48b6fc184c53792d92ea445d02f583f03e3', class: "mt-titulo-h1__subtitle" }, h("slot", { key: 'f4ddda4251cada2aab9fbdb101fb1aceac1204e8', name: "subtitle" }))))));
+            }) }, markdown(produto, especialidade, apostila, parte, ano)));
     }
     static get is() { return "mt-titulo-h1"; }
     static get encapsulation() { return "scoped"; }
@@ -29,15 +32,9 @@ export class TituloH1 {
                 "attribute": "produto",
                 "mutable": false,
                 "complexType": {
-                    "original": "MtProdutos",
-                    "resolved": "\"med\" | \"medcurso\"",
-                    "references": {
-                        "MtProdutos": {
-                            "location": "import",
-                            "path": "../../../global/typescript/types",
-                            "id": "src/global/typescript/types.ts::MtProdutos"
-                        }
-                    }
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
                 },
                 "required": false,
                 "optional": false,
@@ -49,20 +46,14 @@ export class TituloH1 {
                 "setter": false,
                 "reflect": true
             },
-            "especialidade": {
+            "apostila": {
                 "type": "string",
-                "attribute": "especialidade",
+                "attribute": "apostila",
                 "mutable": false,
                 "complexType": {
-                    "original": "MtEspecialidades",
-                    "resolved": "\"car\" | \"nef\"",
-                    "references": {
-                        "MtEspecialidades": {
-                            "location": "import",
-                            "path": "../../../global/typescript/types",
-                            "id": "src/global/typescript/types.ts::MtEspecialidades"
-                        }
-                    }
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
                 },
                 "required": false,
                 "optional": false,
@@ -79,18 +70,50 @@ export class TituloH1 {
                 "attribute": "ano",
                 "mutable": false,
                 "complexType": {
-                    "original": "MtAnos",
-                    "resolved": "\"2026\"",
-                    "references": {
-                        "MtAnos": {
-                            "location": "import",
-                            "path": "../../../global/typescript/types",
-                            "id": "src/global/typescript/types.ts::MtAnos"
-                        }
-                    }
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
                 },
                 "required": false,
                 "optional": false,
+                "docs": {
+                    "tags": [],
+                    "text": ""
+                },
+                "getter": false,
+                "setter": false,
+                "reflect": true
+            },
+            "especialidade": {
+                "type": "string",
+                "attribute": "especialidade",
+                "mutable": false,
+                "complexType": {
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
+                },
+                "required": false,
+                "optional": true,
+                "docs": {
+                    "tags": [],
+                    "text": ""
+                },
+                "getter": false,
+                "setter": false,
+                "reflect": true
+            },
+            "parte": {
+                "type": "string",
+                "attribute": "parte",
+                "mutable": false,
+                "complexType": {
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
+                },
+                "required": false,
+                "optional": true,
                 "docs": {
                     "tags": [],
                     "text": ""

@@ -1,29 +1,34 @@
 :host {
-  --mt-paragrafo-text-color: var(--mt-color-textos-basico);
+  --mt-paragrafo-text-color: var(--mt-color-textos-paragrafo-fonte);
   --mt-paragrafo-text-font-family: "Noto Sans", sans-serif;
   --mt-paragrafo-text-font-weight: 400;
-  --mt-paragrafo-text-text-transform: none;
   --mt-paragrafo-text-font-size: 16px;
+  --mt-paragrafo-strong-color: var(--mt-color-textos-paragrafo-strong);
   --mt-paragrafo-strong-font-weight: 700;
   --mt-paragrafo-strong-text-transform: uppercase;
   --mt-paragrafo-strong-font-style: italic;
-  display: block;
+  --mt-paragrafo-underline-text-decoration-color: var(--mt-color-textos-paragrafo-underline);
 }
 
 .mt-paragrafo__text {
   color: var(--mt-paragrafo-text-color);
   font-family: var(--mt-paragrafo-text-font-family);
   font-weight: var(--mt-paragrafo-text-font-weight);
-  text-transform: var(--mt-paragrafo-text-text-transform);
   font-size: var(--mt-paragrafo-text-font-size);
   line-height: 1;
   margin: 0;
 }
-.mt-paragrafo__text strong {
-  font-weight: var(--mt-paragrafo-strong-font-weight);
+
+::slotted(*) strong {
+  color: var(--mt-paragrafo-strong-color);
+  font-weight: var(--mt-paragrafo-strong-font-weight) !important;
   text-transform: var(--mt-paragrafo-strong-text-transform);
-  font-style: var(--mt-paragrafo-strong-font-style);
+  font-style: var(--mt-paragrafo-strong-font-style) !important;
 }
-.mt-paragrafo__text u {
-  color: var(--mt-color-textos-underline);
+::slotted(*) u {
+  text-decoration-color: var(--mt-paragrafo-underline-text-decoration-color);
+}
+
+:host {
+  display: block;
 }

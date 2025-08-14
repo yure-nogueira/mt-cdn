@@ -1,5 +1,6 @@
 import { html, nothing } from "lit";
-import { MT_ANOS, MT_ESPECIALIDADES, MT_PRODUTOS, } from "../../../../global/typescript/constants";
+import { MT_ANOS, MT_APOSTILAS, MT_ESPECIALIDADES, MT_PARTES, MT_PRODUTOS, } from "../../../../global/typescript/constants";
+import { MtEspecialidadesEnum, MtProdutosEnum, } from "../../../../global/typescript/enums";
 const meta = {
     title: 'Components/Quadros/Quadro 01',
     argTypes: {
@@ -12,9 +13,9 @@ const meta = {
                 type: { summary: 'string' },
             },
         },
-        ['especialidade']: {
+        ['apostila']: {
             control: { type: 'select' },
-            options: [...MT_ESPECIALIDADES],
+            options: [...MT_APOSTILAS],
             description: '',
             table: {
                 defaultValue: { summary: 'undefined' },
@@ -30,24 +31,66 @@ const meta = {
                 type: { summary: 'string' },
             },
         },
+        ['especialidade']: {
+            control: { type: 'select' },
+            options: [...MT_ESPECIALIDADES],
+            description: '',
+            table: {
+                defaultValue: { summary: 'undefined' },
+                type: { summary: 'string' },
+            },
+        },
+        ['parte']: {
+            control: { type: 'select' },
+            options: [...MT_PARTES],
+            description: '',
+            table: {
+                defaultValue: { summary: 'undefined' },
+                type: { summary: 'string' },
+            },
+        },
     },
     args: {
         produto: 'medcurso',
-        especialidade: 'nef',
+        apostila: null,
         ano: '2026',
+        especialidade: 'nef',
+        parte: null,
     },
 };
 export default meta;
 export const Default = {
     render: ({ ...args }) => html `
-    <mt-quadro-01
-      produto="${args['produto'] || nothing}"
-      especialidade="${args['especialidade'] || nothing}"
-      ano="${args['ano'] || nothing}"
-    >
-      <span slot="span">atenção!</span>
-      Assit quibus aut anim erspien ditatum quiscid etur sam rendam.
-    </mt-quadro-01>
+    ${markdown(args['produto'], args['especialidade'], args['apostila'], args['parte'], args['ano'])}
   `,
+};
+const markdown = (produto, especialidade, apostila, parte, ano) => {
+    if (produto === MtProdutosEnum.MEDCURSO) {
+        if (especialidade === MtEspecialidadesEnum.NEF) {
+            return html `
+        <mt-quadro-01
+          produto="${produto || nothing}"
+          especialidade="${especialidade || nothing}"
+          apostila="${apostila || nothing}"
+          parte="${parte || nothing}"
+          ano="${ano || nothing}"
+        >
+          <span slot="title">ATENÇÃO!</span>
+          <span>Assit quibus aut anim erspien ditatum quiscid etur sam rendam.</span>
+        </mt-quadro-01>
+      `;
+        }
+    }
+    return html `
+    <mt-quadro-01
+      produto="${produto || nothing}"
+      especialidade="${especialidade || nothing}"
+      apostila="${apostila || nothing}"
+      parte="${parte || nothing}"
+      ano="${ano || nothing}"
+    >
+      <span>QUADRO 01</span>
+    </mt-quadro-01>
+  `;
 };
 //# sourceMappingURL=quadro-01.stories.js.map

@@ -1,64 +1,49 @@
+:host(.mt-medcurso.mt-car.mt-2026.mt-titulo-h1) .mt-titulo-h1__pre-title {
+  display: none;
+}
+
 :host {
-  --mt-titulo-h1-line-color: var(--mt-color-titulo-capitulo-linha);
-  --mt-titulo-h1-line-width: 8px;
-  --mt-titulo-h1-line-height: auto;
-  --mt-titulo-h1-line-margin: 0 8px 0 0;
-  --mt-titulo-h1-pre-title-color: var(--mt-color-titulo-capitulo-fonte);
-  --mt-titulo-h1-pre-title-font-family: "Roboto", sans-serif;
-  --mt-titulo-h1-pre-title-font-weight: 100;
-  --mt-titulo-h1-pre-title-text-transform: uppercase;
-  --mt-titulo-h1-pre-title-font-size: 16px;
-  --mt-titulo-h1-title-color: var(--mt-color-titulo-h1-fonte);
-  --mt-titulo-h1-title-font-family: "Roboto Condensed", sans-serif;
-  --mt-titulo-h1-title-font-weight: 900;
-  --mt-titulo-h1-title-text-transform: uppercase;
-  --mt-titulo-h1-title-font-size: 32px;
-  --mt-titulo-h1-title-margin: 4px 0 4px 0;
-  --mt-titulo-h1-subtitle-color: var(--mt-color-titulo-h2-fonte);
-  --mt-titulo-h1-subtitle-font-family: "Roboto", sans-serif;
-  --mt-titulo-h1-subtitle-font-weight: 100;
-  --mt-titulo-h1-subtitle-text-transform: uppercase;
-  --mt-titulo-h1-subtitle-font-size: 24px;
-  display: block;
+  --mt-titulos-h1-line-color: var(--mt-color-titulos-capitulo-linha);
+  --mt-titulos-h1-line-padding: 0 0 0 8px;
+  --mt-titulos-h1-pre-title-color: var(--mt-color-titulos-capitulo-fonte);
+  --mt-titulos-h1-pre-title-font-family: "Roboto", sans-serif;
+  --mt-titulos-h1-pre-title-font-weight: 100;
+  --mt-titulos-h1-pre-title-font-size: 16px;
+  --mt-titulos-h1-title-color: var(--mt-color-titulos-h1-fonte);
+  --mt-titulos-h1-title-font-family: "Roboto", sans-serif;
+  --mt-titulos-h1-title-font-weight: 900;
+  --mt-titulos-h1-title-font-size: 40px;
+  --mt-titulos-h1-title-margin: 4px 0 4px 0;
+  --mt-titulos-h1-subtitle-color: var(--mt-color-titulos-h2-fonte);
+  --mt-titulos-h1-subtitle-font-family: "Roboto", sans-serif;
+  --mt-titulos-h1-subtitle-font-weight: 300;
+  --mt-titulos-h1-subtitle-font-size: 24px;
 }
 
 .mt-titulo-h1__container {
-  display: flex;
-}
-.mt-titulo-h1__inner-container {
-  display: flex;
-  flex-direction: column;
-}
-.mt-titulo-h1__line {
-  margin: var(--mt-titulo-h1-line-margin);
-  background-color: var(--mt-titulo-h1-line-color);
-  width: var(--mt-titulo-h1-line-width);
-  height: var(--mt-titulo-h1-line-height);
+  padding: var(--mt-titulos-h1-line-padding);
+  border-left: 10px solid var(--mt-titulos-h1-line-color);
 }
 .mt-titulo-h1__pre-title {
-  color: var(--mt-titulo-h1-pre-title-color);
-  font-family: var(--mt-titulo-h1-pre-title-font-family);
-  font-weight: var(--mt-titulo-h1-pre-title-font-weight);
-  text-transform: var(--mt-titulo-h1-pre-title-text-transform);
-  font-size: var(--mt-titulo-h1-pre-title-font-size);
-  line-height: 1;
-  margin: 0;
+  color: var(--mt-titulos-h1-pre-title-color);
+  font-family: var(--mt-titulos-h1-pre-title-font-family);
+  font-weight: var(--mt-titulos-h1-pre-title-font-weight);
+  font-size: var(--mt-titulos-h1-pre-title-font-size);
 }
 .mt-titulo-h1__title {
-  color: var(--mt-titulo-h1-title-color);
-  font-family: var(--mt-titulo-h1-title-font-family);
-  font-weight: var(--mt-titulo-h1-title-font-weight);
-  text-transform: var(--mt-titulo-h1-title-text-transform);
-  font-size: var(--mt-titulo-h1-title-font-size);
-  line-height: 1;
-  margin: var(--mt-titulo-h1-title-margin);
+  color: var(--mt-titulos-h1-title-color);
+  font-family: var(--mt-titulos-h1-title-font-family);
+  font-weight: var(--mt-titulos-h1-title-font-weight);
+  font-size: var(--mt-titulos-h1-title-font-size);
+  margin: var(--mt-titulos-h1-title-margin);
 }
 .mt-titulo-h1__subtitle {
-  color: var(--mt-titulo-h1-subtitle-color);
-  font-family: var(--mt-titulo-h1-subtitle-font-family);
-  font-weight: var(--mt-titulo-h1-subtitle-font-weight);
-  text-transform: var(--mt-titulo-h1-subtitle-text-transform);
-  font-size: var(--mt-titulo-h1-subtitle-font-size);
-  line-height: 1;
-  margin: 0;
+  color: var(--mt-titulos-h1-subtitle-color);
+  font-family: var(--mt-titulos-h1-subtitle-font-family);
+  font-weight: var(--mt-titulos-h1-subtitle-font-weight);
+  font-size: var(--mt-titulos-h1-subtitle-font-size);
+}
+
+:host {
+  display: block;
 }

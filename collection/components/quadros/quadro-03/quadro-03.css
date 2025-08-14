@@ -1,25 +1,24 @@
+@charset "UTF-8";
 :host {
   --mt-quadro-03-container-padding: 12px;
   --mt-quadro-03-container-border: 2px solid var(--mt-color-quadros-linha-01);
   --mt-quadro-03-title-color: var(--mt-color-quadros-fonte-02);
   --mt-quadro-03-title-font-family: "Noto Sans", sans-serif;
   --mt-quadro-03-title-font-weight: 700;
-  --mt-quadro-03-title-text-transform: none;
   --mt-quadro-03-title-font-size: 16px;
   --mt-quadro-03-title-margin: 0 0 12px 0;
   --mt-quadro-03-text-color: var(--mt-color-quadros-fonte-02);
   --mt-quadro-03-text-font-family: "Noto Sans", sans-serif;
   --mt-quadro-03-text-font-weight: 400;
-  --mt-quadro-03-text-text-transform: none;
   --mt-quadro-03-text-font-size: 16px;
   --mt-quadro-03-list-color: var(--mt-color-quadros-fonte-02);
   --mt-quadro-03-list-font-family: "Noto Sans", sans-serif;
   --mt-quadro-03-list-font-weight: 400;
-  --mt-quadro-03-list-text-transform: none;
   --mt-quadro-03-list-font-size: 16px;
   --mt-quadro-03-list-margin: 12px 0 0 0;
-  --mt-quadro-03-list-padding: 0 0 0 20px;
-  display: block;
+  --mt-quadro-03-item-dot-font-size: 10px;
+  --mt-quadro-03-item-dot-padding: 0 8px 0 0;
+  --mt-quadro-03-item-dot-content: "●";
 }
 
 .mt-quadro-03__container {
@@ -30,28 +29,31 @@
   color: var(--mt-quadro-03-title-color);
   font-family: var(--mt-quadro-03-title-font-family);
   font-weight: var(--mt-quadro-03-title-font-weight);
-  text-transform: var(--mt-quadro-03-title-text-transform);
   font-size: var(--mt-quadro-03-title-font-size);
-  line-height: 1;
   margin: var(--mt-quadro-03-title-margin);
 }
 .mt-quadro-03__text {
   color: var(--mt-quadro-03-text-color);
   font-family: var(--mt-quadro-03-text-font-family);
   font-weight: var(--mt-quadro-03-text-font-weight);
-  text-transform: var(--mt-quadro-03-text-text-transform);
   font-size: var(--mt-quadro-03-text-font-size);
-  line-height: 1;
-  margin: 0;
 }
 
-::slotted([slot=list]) {
+::slotted([slot=list]) li {
   color: var(--mt-quadro-03-list-color);
   font-family: var(--mt-quadro-03-list-font-family);
   font-weight: var(--mt-quadro-03-list-font-weight);
-  text-transform: var(--mt-quadro-03-list-text-transform);
   font-size: var(--mt-quadro-03-list-font-size);
-  line-height: 1;
   margin: var(--mt-quadro-03-list-margin);
-  padding: var(--mt-quadro-03-list-padding);
+  display: flex;
+  align-items: center;
+}
+::slotted([slot=list]) li::before {
+  font-size: var(--mt-quadro-03-item-dot-font-size);
+  padding: var(--mt-quadro-03-item-dot-padding);
+  content: var(--mt-quadro-03-item-dot-content);
+}
+
+:host {
+  display: block;
 }

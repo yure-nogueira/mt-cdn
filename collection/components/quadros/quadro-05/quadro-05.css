@@ -4,15 +4,12 @@
   --mt-quadro-05-title-color: var(--mt-color-quadros-fonte-02);
   --mt-quadro-05-title-font-family: "Noto Sans", sans-serif;
   --mt-quadro-05-title-font-weight: 700;
-  --mt-quadro-05-title-text-transform: none;
   --mt-quadro-05-title-font-size: 16px;
   --mt-quadro-05-title-margin: 0 0 12px 0;
   --mt-quadro-05-text-color: var(--mt-color-quadros-fonte-02);
   --mt-quadro-05-text-font-family: "Noto Sans", sans-serif;
   --mt-quadro-05-text-font-weight: 400;
-  --mt-quadro-05-text-text-transform: none;
   --mt-quadro-05-text-font-size: 16px;
-  display: block;
 }
 
 .mt-quadro-05__container {
@@ -23,17 +20,16 @@
   color: var(--mt-quadro-05-title-color);
   font-family: var(--mt-quadro-05-title-font-family);
   font-weight: var(--mt-quadro-05-title-font-weight);
-  text-transform: var(--mt-quadro-05-title-text-transform);
   font-size: var(--mt-quadro-05-title-font-size);
-  line-height: 1;
   margin: var(--mt-quadro-05-title-margin);
 }
 .mt-quadro-05__text {
   color: var(--mt-quadro-05-text-color);
   font-family: var(--mt-quadro-05-text-font-family);
   font-weight: var(--mt-quadro-05-text-font-weight);
-  text-transform: var(--mt-quadro-05-text-text-transform);
   font-size: var(--mt-quadro-05-text-font-size);
-  line-height: 1;
-  margin: 0;
+}
+
+:host {
+  display: block;
 }

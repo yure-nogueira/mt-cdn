@@ -1,14 +1,17 @@
 import { h, Host } from "@stencil/core";
 import { generateClasses } from "../../../global/typescript/functions";
+import { markdown } from "./utilities/functions";
 export class Quadro01 {
     produto;
-    especialidade;
+    apostila;
     ano;
+    especialidade;
+    parte;
     render() {
-        const { produto, especialidade, ano } = this;
-        return (h(Host, { key: 'e42a3639c457e50f96b5f64ab1ba8f13a6689685', class: generateClasses(produto, especialidade, ano, {
+        const { produto, especialidade, apostila, parte, ano } = this;
+        return (h(Host, { key: '9270114a5d10a56fe6cd47f5b49ae846f49ecbaf', class: generateClasses(produto, apostila, ano, especialidade, parte, {
                 'mt-quadro-01': true,
-            }) }, h("div", { key: '417700abdb5e649fbf1511f88b7a4c8432929288', class: "mt-quadro-01__container" }, h("span", { key: 'e625ba3cf72d281fae3e4440cb491bce2da954f5', class: "mt-quadro-01__span" }, h("slot", { key: 'fd483a5044b9f0a30dbf0f1bdf085c0caf7e6957', name: "span" })), h("p", { key: 'ba2c3e456bf17d04d859bb6530ed92144d6241cd', class: "mt-quadro-01__text" }, h("slot", { key: 'e6445cea646549fbeb118c1c0e316af14ee0ff84' })))));
+            }) }, markdown(produto, especialidade, apostila, parte, ano)));
     }
     static get is() { return "mt-quadro-01"; }
     static get encapsulation() { return "scoped"; }
@@ -29,15 +32,9 @@ export class Quadro01 {
                 "attribute": "produto",
                 "mutable": false,
                 "complexType": {
-                    "original": "MtProdutos",
-                    "resolved": "\"med\" | \"medcurso\"",
-                    "references": {
-                        "MtProdutos": {
-                            "location": "import",
-                            "path": "../../../global/typescript/types",
-                            "id": "src/global/typescript/types.ts::MtProdutos"
-                        }
-                    }
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
                 },
                 "required": false,
                 "optional": false,
@@ -49,20 +46,14 @@ export class Quadro01 {
                 "setter": false,
                 "reflect": true
             },
-            "especialidade": {
+            "apostila": {
                 "type": "string",
-                "attribute": "especialidade",
+                "attribute": "apostila",
                 "mutable": false,
                 "complexType": {
-                    "original": "MtEspecialidades",
-                    "resolved": "\"car\" | \"nef\"",
-                    "references": {
-                        "MtEspecialidades": {
-                            "location": "import",
-                            "path": "../../../global/typescript/types",
-                            "id": "src/global/typescript/types.ts::MtEspecialidades"
-                        }
-                    }
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
                 },
                 "required": false,
                 "optional": false,
@@ -79,18 +70,50 @@ export class Quadro01 {
                 "attribute": "ano",
                 "mutable": false,
                 "complexType": {
-                    "original": "MtAnos",
-                    "resolved": "\"2026\"",
-                    "references": {
-                        "MtAnos": {
-                            "location": "import",
-                            "path": "../../../global/typescript/types",
-                            "id": "src/global/typescript/types.ts::MtAnos"
-                        }
-                    }
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
                 },
                 "required": false,
                 "optional": false,
+                "docs": {
+                    "tags": [],
+                    "text": ""
+                },
+                "getter": false,
+                "setter": false,
+                "reflect": true
+            },
+            "especialidade": {
+                "type": "string",
+                "attribute": "especialidade",
+                "mutable": false,
+                "complexType": {
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
+                },
+                "required": false,
+                "optional": true,
+                "docs": {
+                    "tags": [],
+                    "text": ""
+                },
+                "getter": false,
+                "setter": false,
+                "reflect": true
+            },
+            "parte": {
+                "type": "string",
+                "attribute": "parte",
+                "mutable": false,
+                "complexType": {
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
+                },
+                "required": false,
+                "optional": true,
                 "docs": {
                     "tags": [],
                     "text": ""

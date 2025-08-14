@@ -5,73 +5,90 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
-import { MtAnos, MtEspecialidades, MtProdutos } from "./global/typescript/types";
-export { MtAnos, MtEspecialidades, MtProdutos } from "./global/typescript/types";
 export namespace Components {
     interface MtParagrafo {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtQuadro01 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtQuadro02 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtQuadro03 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtQuadro04 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtQuadro05 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
-    }
-    interface MtQuadro06 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtTituloH1 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtTituloH2 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtTituloH3 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtTituloH4 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtTituloH5 {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
     interface MtTituloResumo {
-        "ano": MtAnos;
-        "especialidade": MtEspecialidades;
-        "produto": MtProdutos;
+        "ano": string;
+        "apostila": string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto": string;
     }
 }
 declare global {
@@ -110,12 +127,6 @@ declare global {
     var HTMLMtQuadro05Element: {
         prototype: HTMLMtQuadro05Element;
         new (): HTMLMtQuadro05Element;
-    };
-    interface HTMLMtQuadro06Element extends Components.MtQuadro06, HTMLStencilElement {
-    }
-    var HTMLMtQuadro06Element: {
-        prototype: HTMLMtQuadro06Element;
-        new (): HTMLMtQuadro06Element;
     };
     interface HTMLMtTituloH1Element extends Components.MtTituloH1, HTMLStencilElement {
     }
@@ -160,7 +171,6 @@ declare global {
         "mt-quadro-03": HTMLMtQuadro03Element;
         "mt-quadro-04": HTMLMtQuadro04Element;
         "mt-quadro-05": HTMLMtQuadro05Element;
-        "mt-quadro-06": HTMLMtQuadro06Element;
         "mt-titulo-h1": HTMLMtTituloH1Element;
         "mt-titulo-h2": HTMLMtTituloH2Element;
         "mt-titulo-h3": HTMLMtTituloH3Element;
@@ -171,69 +181,88 @@ declare global {
 }
 declare namespace LocalJSX {
     interface MtParagrafo {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtQuadro01 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtQuadro02 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtQuadro03 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtQuadro04 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtQuadro05 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
-    }
-    interface MtQuadro06 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtTituloH1 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtTituloH2 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtTituloH3 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtTituloH4 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtTituloH5 {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface MtTituloResumo {
-        "ano"?: MtAnos;
-        "especialidade"?: MtEspecialidades;
-        "produto"?: MtProdutos;
+        "ano"?: string;
+        "apostila"?: string;
+        "especialidade"?: string;
+        "parte"?: string;
+        "produto"?: string;
     }
     interface IntrinsicElements {
         "mt-paragrafo": MtParagrafo;
@@ -242,7 +271,6 @@ declare namespace LocalJSX {
         "mt-quadro-03": MtQuadro03;
         "mt-quadro-04": MtQuadro04;
         "mt-quadro-05": MtQuadro05;
-        "mt-quadro-06": MtQuadro06;
         "mt-titulo-h1": MtTituloH1;
         "mt-titulo-h2": MtTituloH2;
         "mt-titulo-h3": MtTituloH3;
@@ -261,7 +289,6 @@ declare module "@stencil/core" {
             "mt-quadro-03": LocalJSX.MtQuadro03 & JSXBase.HTMLAttributes<HTMLMtQuadro03Element>;
             "mt-quadro-04": LocalJSX.MtQuadro04 & JSXBase.HTMLAttributes<HTMLMtQuadro04Element>;
             "mt-quadro-05": LocalJSX.MtQuadro05 & JSXBase.HTMLAttributes<HTMLMtQuadro05Element>;
-            "mt-quadro-06": LocalJSX.MtQuadro06 & JSXBase.HTMLAttributes<HTMLMtQuadro06Element>;
             "mt-titulo-h1": LocalJSX.MtTituloH1 & JSXBase.HTMLAttributes<HTMLMtTituloH1Element>;
             "mt-titulo-h2": LocalJSX.MtTituloH2 & JSXBase.HTMLAttributes<HTMLMtTituloH2Element>;
             "mt-titulo-h3": LocalJSX.MtTituloH3 & JSXBase.HTMLAttributes<HTMLMtTituloH3Element>;

@@ -1,5 +1,6 @@
 import { html, nothing } from "lit";
-import { MT_ANOS, MT_ESPECIALIDADES, MT_PRODUTOS, } from "../../../../global/typescript/constants";
+import { MT_ANOS, MT_APOSTILAS, MT_ESPECIALIDADES, MT_PARTES, MT_PRODUTOS, } from "../../../../global/typescript/constants";
+import { MtEspecialidadesEnum, MtProdutosEnum, } from "../../../../global/typescript/enums";
 const meta = {
     title: 'Components/Títulos/Título Resumo',
     argTypes: {
@@ -12,9 +13,9 @@ const meta = {
                 type: { summary: 'string' },
             },
         },
-        ['especialidade']: {
+        ['apostila']: {
             control: { type: 'select' },
-            options: [...MT_ESPECIALIDADES],
+            options: [...MT_APOSTILAS],
             description: '',
             table: {
                 defaultValue: { summary: 'undefined' },
@@ -30,23 +31,65 @@ const meta = {
                 type: { summary: 'string' },
             },
         },
+        ['especialidade']: {
+            control: { type: 'select' },
+            options: [...MT_ESPECIALIDADES],
+            description: '',
+            table: {
+                defaultValue: { summary: 'undefined' },
+                type: { summary: 'string' },
+            },
+        },
+        ['parte']: {
+            control: { type: 'select' },
+            options: [...MT_PARTES],
+            description: '',
+            table: {
+                defaultValue: { summary: 'undefined' },
+                type: { summary: 'string' },
+            },
+        },
     },
     args: {
         produto: 'medcurso',
-        especialidade: 'nef',
+        apostila: null,
         ano: '2026',
+        especialidade: 'nef',
+        parte: null,
     },
 };
 export default meta;
 export const Default = {
     render: ({ ...args }) => html `
-    <mt-titulo-resumo
-      produto="${args['produto'] || nothing}"
-      especialidade="${args['especialidade'] || nothing}"
-      ano="${args['ano'] || nothing}"
-    >
-      título resumo
-    </mt-titulo-resumo>
+    ${markdown(args['produto'], args['especialidade'], args['apostila'], args['parte'], args['ano'])}
   `,
+};
+const markdown = (produto, especialidade, apostila, parte, ano) => {
+    if (produto === MtProdutosEnum.MEDCURSO) {
+        if (especialidade === MtEspecialidadesEnum.NEF) {
+            return html `
+        <mt-titulo-RESUMO
+          produto="${produto || nothing}"
+          especialidade="${especialidade || nothing}"
+          apostila="${apostila || nothing}"
+          parte="${parte || nothing}"
+          ano="${ano || nothing}"
+        >
+          <span>TÍTULO RESUMO</span>
+        </mt-titulo-RESUMO>
+      `;
+        }
+    }
+    return html `
+    <mt-titulo-RESUMO
+      produto="${produto || nothing}"
+      especialidade="${especialidade || nothing}"
+      apostila="${apostila || nothing}"
+      parte="${parte || nothing}"
+      ano="${ano || nothing}"
+    >
+      <span>TÍTULO RESUMO</span>
+    </mt-titulo-RESUMO>
+  `;
 };
 //# sourceMappingURL=titulo-resumo.stories.js.map

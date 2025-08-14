@@ -1,7 +1,8 @@
-import { MtAnos, MtEspecialidades, MtProdutos } from '../../../global/typescript/types';
 export declare class TituloH4 {
-    produto: MtProdutos;
-    especialidade: MtEspecialidades;
-    ano: MtAnos;
+    produto: string;
+    apostila: string;
+    ano: string;
+    especialidade?: string;
+    parte?: string;
     render(): any;
 }

@@ -1,0 +1,2 @@
+const t=(t,e,a,u,n,r)=>({[`mt-${t}`]:true,[`mt-${e}`]:true,[`mt-${a}`]:true,[`mt-${u}`]:!!u,[`mt-${n}`]:!!n,...r});var e;(function(t){t["DEFAULT"]="default";t["MEDCURSO"]="medcurso"})(e||(e={}));var a;(function(t){t["DEFAULT"]="default";t["NEF"]="nef"})(a||(a={}));var u;(function(t){t["DEFAULT"]="default";t["NEF_01"]="nef-01"})(u||(u={}));var n;(function(t){t["DEFAULT"]="default";t["REVPRE"]="revpre";t["DIGIPRE"]="digipre"})(n||(n={}));var r;(function(t){t["DEFAULT"]="default";t["ANO_2026"]="2026"})(r||(r={}));export{e as M,a,t as g};
+//# sourceMappingURL=p-M0FWbnS6.js.map

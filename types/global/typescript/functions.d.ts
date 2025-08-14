@@ -1,2 +1,2 @@
-import type { MtAnos, MtCssClassMap, MtEspecialidades, MtProdutos } from './types';
-export declare const generateClasses: (produto: MtProdutos | undefined | null, especialidade: MtEspecialidades | undefined | null, ano: MtAnos | undefined | null, cssClassMap: MtCssClassMap) => MtCssClassMap;
+import type { MtCssClassMap } from './types';
+export declare const generateClasses: (produto: string, apostila: string, ano: string, especialidade?: string, parte?: string, cssClassMap?: MtCssClassMap) => MtCssClassMap;

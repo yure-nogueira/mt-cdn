@@ -1,22 +1,35 @@
 'use strict';
 
 var index = require('./index-D-YE1rsj.js');
-var functions = require('./functions-DWyFPlQy.js');
+var enums = require('./enums-Bjj1_LNU.js');
 
-const tituloH4Css = ".sc-mt-titulo-h4-h{--mt-titulo-h4-text-color:var(--mt-color-titulo-h4-fonte);--mt-titulo-h4-text-font-family:\"Roboto\", sans-serif;--mt-titulo-h4-text-font-weight:900;--mt-titulo-h4-text-text-transform:uppercase;--mt-titulo-h4-text-font-size:12px;--mt-titulo-h4-line-color:var(--mt-titulo-h4-text-color);--mt-titulo-h4-line-font-size:10px;--mt-titulo-h4-line-margin:0 6px 0 0;display:block}.mt-titulo-h4__container.sc-mt-titulo-h4{display:flex;flex-direction:row;align-items:center}.mt-titulo-h4__line.sc-mt-titulo-h4{color:var(--mt-titulo-h4-line-color);font-size:var(--mt-titulo-h4-line-font-size);margin:var(--mt-titulo-h4-line-margin)}.mt-titulo-h4__text.sc-mt-titulo-h4{color:var(--mt-titulo-h4-text-color);font-family:var(--mt-titulo-h4-text-font-family);font-weight:var(--mt-titulo-h4-text-font-weight);text-transform:var(--mt-titulo-h4-text-text-transform);font-size:var(--mt-titulo-h4-text-font-size);line-height:1;margin:0}";
+const markdown = (produto, especialidade, _apostila, _parte, _ano) => {
+    if (produto === enums.MtProdutosEnum.MEDCURSO) {
+        if (especialidade === enums.MtEspecialidadesEnum.NEF) {
+            return (index.h("h4", { class: "mt-titulo-h4__text" },
+                index.h("slot", null)));
+        }
+    }
+    return (index.h("h4", null,
+        index.h("slot", null)));
+};
+
+const tituloH4Css = "@charset \"UTF-8\";.sc-mt-titulo-h4-h{--mt-titulo-h4-text-color:var(--mt-color-titulos-h4-fonte);--mt-titulo-h4-text-font-family:\"Roboto\", sans-serif;--mt-titulo-h4-text-font-weight:900;--mt-titulo-h4-text-font-size:12px;--mt-titulo-h4-text-content:\"▶\"}.mt-titulo-h4__text.sc-mt-titulo-h4{color:var(--mt-titulo-h4-text-color);font-family:var(--mt-titulo-h4-text-font-family);font-weight:var(--mt-titulo-h4-text-font-weight);font-size:var(--mt-titulo-h4-text-font-size)}.mt-titulo-h4__text.sc-mt-titulo-h4::before{content:var(--mt-titulo-h4-text-content);color:inherit}.sc-mt-titulo-h4-h{display:block}";
 
 const TituloH4 = class {
     constructor(hostRef) {
         index.registerInstance(this, hostRef);
     }
     produto;
-    especialidade;
+    apostila;
     ano;
+    especialidade;
+    parte;
     render() {
-        const { produto, especialidade, ano } = this;
-        return (index.h(index.Host, { key: 'a24ee3e031007dfb1c743bc82315ecf8dac76b6d', class: functions.generateClasses(produto, especialidade, ano, {
+        const { produto, especialidade, apostila, parte, ano } = this;
+        return (index.h(index.Host, { key: '0cf03bacdb99684de6bb95bdba14b2310e5d8336', class: enums.generateClasses(produto, apostila, ano, especialidade, parte, {
                 'mt-titulo-h4': true,
-            }) }, index.h("div", { key: '562ec01fc6d84e6f4ae60209acd1cad1a8f59dcc', class: "mt-titulo-h4__container" }, index.h("div", { key: 'dbc4e3f3f9a0e4fb326c44dedf7c25f627ea5f53', class: "mt-titulo-h4__line" }, "\u25B6"), index.h("h4", { key: '86df144d7229a5dad2fa29cd5d51147a56cf2c0d', class: "mt-titulo-h4__text" }, index.h("slot", { key: '47524bb298d37c3e18e5cd0001ce29912a5a907b' })))));
+            }) }, markdown(produto, especialidade)));
     }
 };
 TituloH4.style = tituloH4Css;

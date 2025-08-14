@@ -1,11 +1,11 @@
-export const generateClasses = (produto, especialidade, ano, cssClassMap) => {
-    return typeof produto === 'string' && produto.length > 0
-        ? {
-            [`mt-${produto}`]: true,
-            [`mt-${especialidade}`]: true,
-            [`mt-${ano}`]: true,
-            ...cssClassMap,
-        }
-        : cssClassMap;
+export const generateClasses = (produto, apostila, ano, especialidade, parte, cssClassMap) => {
+    return {
+        [`mt-${produto}`]: true,
+        [`mt-${apostila}`]: true,
+        [`mt-${ano}`]: true,
+        [`mt-${especialidade}`]: !!especialidade,
+        [`mt-${parte}`]: !!parte,
+        ...cssClassMap,
+    };
 };
 //# sourceMappingURL=functions.js.map

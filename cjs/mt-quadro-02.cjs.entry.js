@@ -1,22 +1,39 @@
 'use strict';
 
 var index = require('./index-D-YE1rsj.js');
-var functions = require('./functions-DWyFPlQy.js');
+var enums = require('./enums-Bjj1_LNU.js');
 
-const quadro02Css = ".sc-mt-quadro-02-h{--mt-quadro-02-left-margin:0 6px 0 0;--mt-quadro-02-text-color:var(--mt-color-quadros-fonte-02);--mt-quadro-02-text-font-family:\"Noto Sans\", sans-serif;--mt-quadro-02-text-font-weight:500;--mt-quadro-02-text-text-transform:none;--mt-quadro-02-text-font-size:16px;--mt-quadro-02-inner-container-padding:12px;--mt-quadro-02-inner-container-background-color:var(--mt-color-quadros-bg-02);display:block}.mt-quadro-02__container.sc-mt-quadro-02{display:flex;align-items:center}.mt-quadro-02__left.sc-mt-quadro-02{margin:var(--mt-quadro-02-left-margin)}.mt-quadro-02__inner-container.sc-mt-quadro-02{padding:var(--mt-quadro-02-inner-container-padding);background-color:var(--mt-quadro-02-inner-container-background-color);flex:1}.mt-quadro-02__text.sc-mt-quadro-02{color:var(--mt-quadro-02-text-color);font-family:var(--mt-quadro-02-text-font-family);font-weight:var(--mt-quadro-02-text-font-weight);text-transform:var(--mt-quadro-02-text-text-transform);font-size:var(--mt-quadro-02-text-font-size);line-height:1;margin:0}";
+const markdown = (produto, especialidade, _apostila, _parte, _ano) => {
+    if (produto === enums.MtProdutosEnum.MEDCURSO) {
+        if (especialidade === enums.MtEspecialidadesEnum.NEF) {
+            return (index.h("div", { class: "mt-quadro-02__container" },
+                index.h("div", { class: "mt-quadro-02__left" },
+                    index.h("slot", { name: "left" })),
+                index.h("div", { class: "mt-quadro-02__inner-container" },
+                    index.h("p", { class: "mt-quadro-02__text" },
+                        index.h("slot", null)))));
+        }
+    }
+    return (index.h("p", null,
+        index.h("slot", null)));
+};
+
+const quadro02Css = ".sc-mt-quadro-02-h{--mt-quadro-02-left-margin:0 6px 0 0;--mt-quadro-02-text-color:var(--mt-color-quadros-fonte-02);--mt-quadro-02-text-font-family:\"Noto Sans\", sans-serif;--mt-quadro-02-text-font-weight:500;--mt-quadro-02-text-font-size:14px;--mt-quadro-02-inner-container-padding:12px;--mt-quadro-02-inner-container-background-color:var(--mt-color-quadros-bg-02);display:block}.mt-quadro-02__container.sc-mt-quadro-02{display:flex;align-items:center}.mt-quadro-02__left.sc-mt-quadro-02{margin:var(--mt-quadro-02-left-margin)}.mt-quadro-02__inner-container.sc-mt-quadro-02{padding:var(--mt-quadro-02-inner-container-padding);background-color:var(--mt-quadro-02-inner-container-background-color);flex:1}.mt-quadro-02__text.sc-mt-quadro-02{color:var(--mt-quadro-02-text-color);font-family:var(--mt-quadro-02-text-font-family);font-weight:var(--mt-quadro-02-text-font-weight);font-size:var(--mt-quadro-02-text-font-size)}.sc-mt-quadro-02-h{display:block}";
 
 const Quadro02 = class {
     constructor(hostRef) {
         index.registerInstance(this, hostRef);
     }
     produto;
-    especialidade;
+    apostila;
     ano;
+    especialidade;
+    parte;
     render() {
-        const { produto, especialidade, ano } = this;
-        return (index.h(index.Host, { key: 'c13f19221d7f0f20d54ba9d172cfe9c5d7764149', class: functions.generateClasses(produto, especialidade, ano, {
+        const { produto, especialidade, apostila, parte, ano } = this;
+        return (index.h(index.Host, { key: '7f078e6c3dce45c279d198521915e4206d65076c', class: enums.generateClasses(produto, apostila, ano, especialidade, parte, {
                 'mt-quadro-02': true,
-            }) }, index.h("div", { key: '68f73cb3710aa3a89f4448c95aa3f12404f37c2c', class: "mt-quadro-02__container" }, index.h("div", { key: 'b452b83ae68ccf44efab9735017a533676b8b468', class: "mt-quadro-02__left" }, index.h("slot", { key: '6783fdcbfb70ed603906d6948e78a19877030d9d', name: "left" })), index.h("div", { key: '30c277151ffa5f9f273444c3db0a18876cbdc0fc', class: "mt-quadro-02__inner-container" }, index.h("p", { key: '59aac554f7efeca0cb9df5d6d34c5c41dfdc159b', class: "mt-quadro-02__text" }, index.h("slot", { key: '0053cd6b47cb176dc71f5b7140f04d0851e82e4e' }))))));
+            }) }, markdown(produto, especialidade)));
     }
 };
 Quadro02.style = quadro02Css;
