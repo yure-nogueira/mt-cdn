@@ -1,35 +1,15 @@
 'use strict';
 
-var index = require('./index-D-YE1rsj.js');
-var enums = require('./enums-Bjj1_LNU.js');
+var index = require('./index-CtT_xTgK.js');
 
-const markdown = (produto, especialidade, _apostila, _parte, _ano) => {
-    if (produto === enums.MtProdutosEnum.MEDCURSO) {
-        if (especialidade === enums.MtEspecialidadesEnum.NEF) {
-            return (index.h("h6", { class: "mt-titulo-resumo__text" },
-                index.h("slot", null)));
-        }
-    }
-    return (index.h("h6", null,
-        index.h("slot", null)));
-};
-
-const tituloResumoCss = ".sc-mt-titulo-resumo-h{--mt-titulo-resumo-text-color:var(--mt-color-titulos-resumo-fonte);--mt-titulo-resumo-text-font-family:\"Roboto\", sans-serif;--mt-titulo-resumo-text-font-weight:900;--mt-titulo-resumo-text-text-transform:uppercase;--mt-titulo-resumo-text-font-size:14px}.mt-titulo-resumo__text.sc-mt-titulo-resumo{color:var(--mt-titulo-resumo-text-color);font-family:var(--mt-titulo-resumo-text-font-family);font-weight:var(--mt-titulo-resumo-text-font-weight);text-transform:var(--mt-titulo-resumo-text-text-transform);font-size:var(--mt-titulo-resumo-text-font-size)}.sc-mt-titulo-resumo-h{display:block}";
+const tituloResumoCss = ".sc-mt-titulo-resumo-h{--mt-titulo-resumo-padding:4px 0 0 0;--mt-titulo-resumo-margin:0;color:#9abec0;font-family:\"Roboto\", sans-serif;font-weight:900;font-size:14px;line-height:1;margin:var(--mt-titulo-resumo-margin);padding:var(--mt-titulo-resumo-padding);letter-spacing:1px}";
 
 const TituloResumo = class {
     constructor(hostRef) {
         index.registerInstance(this, hostRef);
     }
-    produto;
-    apostila;
-    ano;
-    especialidade;
-    parte;
     render() {
-        const { produto, especialidade, apostila, parte, ano } = this;
-        return (index.h(index.Host, { key: '0d3553e1c1323480a4a775d34ce8ce55315075ae', class: enums.generateClasses(produto, apostila, ano, especialidade, parte, {
-                'mt-titulo-resumo': true,
-            }) }, markdown(produto, especialidade)));
+        return (index.h(index.Host, { key: '746602818df57ced7992f9577c73438e00a4981a', class: "mt-titulo-resumo" }, index.h("h6", { key: '9e8d72be4bb980c1aaf8649bfd7c85f8d47ac953' }, index.h("slot", { key: '6ea47cfd7efd1059c83e96d826b6a2d8d0dd3f66' }))));
     }
 };
 TituloResumo.style = tituloResumoCss;

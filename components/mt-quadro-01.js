@@ -1,46 +1,17 @@
-import { h, p as proxyCustomElement, H, a as Host } from './index.js';
-import { M as MtProdutosEnum, a as MtEspecialidadesEnum, g as generateClasses } from './p-M0FWbnS6.js';
+import { p as proxyCustomElement, H, h, a as Host } from './index.js';
 
-const markdown = (produto, especialidade, _apostila, _parte, _ano) => {
-    if (produto === MtProdutosEnum.MEDCURSO) {
-        if (especialidade === MtEspecialidadesEnum.NEF) {
-            return (h("div", { class: "mt-quadro-01__container" },
-                h("span", { class: "mt-quadro-01__title" },
-                    h("slot", { name: "title" })),
-                h("p", { class: "mt-quadro-01__text" },
-                    h("slot", null))));
-        }
-    }
-    return (h("p", null,
-        h("slot", null)));
-};
-
-const quadro01Css = ".sc-mt-quadro-01-h{--mt-quadro-01-span-color:var(--mt-color-quadros-fonte-01);--mt-quadro-01-span-font-family:\"Noto Sans\", sans-serif;--mt-quadro-01-span-font-weight:900;--mt-quadro-01-span-font-size:14px;--mt-quadro-01-span-padding:6px;--mt-quadro-01-span-background-color:var(--mt-color-quadros-bg-01);--mt-quadro-01-container-border:2px solid var(--mt-color-quadros-fonte-02);--mt-quadro-01-text-color:var(--mt-color-quadros-fonte-02);--mt-quadro-01-text-font-family:\"Noto Sans\", sans-serif;--mt-quadro-01-text-font-weight:500;--mt-quadro-01-text-font-size:16px;--mt-quadro-01-text-padding:6px;display:block}.mt-quadro-01__container.sc-mt-quadro-01{border-left:var(--mt-quadro-01-container-border)}.mt-quadro-01__title.sc-mt-quadro-01{color:var(--mt-quadro-01-span-color);font-family:var(--mt-quadro-01-span-font-family);font-weight:var(--mt-quadro-01-span-font-weight);font-size:var(--mt-quadro-01-span-font-size);padding:var(--mt-quadro-01-span-padding);border-left:var(--mt-quadro-01-container-border);background-color:var(--mt-quadro-01-span-background-color);display:inline-block}.mt-quadro-01__text.sc-mt-quadro-01{color:var(--mt-quadro-01-text-color);font-family:var(--mt-quadro-01-text-font-family);font-weight:var(--mt-quadro-01-text-font-weight);font-size:var(--mt-quadro-01-text-font-size);padding:var(--mt-quadro-01-text-padding)}.sc-mt-quadro-01-h{display:block}";
+const quadro01Css = ".sc-mt-quadro-01-h{border-left:3px solid #455a5a;display:block}.mt-quadro-01__title.sc-mt-quadro-01{color:#fff;font-family:\"Roboto\", sans-serif;font-weight:700;font-size:14px;padding:2px 10px;background-color:#455a5a;display:inline-block}.mt-quadro-01__text.sc-mt-quadro-01{color:#455a5a;font-family:\"Merriweather\", serif;font-weight:700;font-size:14px;line-height:1.5;padding:6px}";
 
 const Quadro01 = /*@__PURE__*/ proxyCustomElement(class Quadro01 extends H {
     constructor() {
         super();
         this.__registerHost();
     }
-    produto;
-    apostila;
-    ano;
-    especialidade;
-    parte;
     render() {
-        const { produto, especialidade, apostila, parte, ano } = this;
-        return (h(Host, { key: '9270114a5d10a56fe6cd47f5b49ae846f49ecbaf', class: generateClasses(produto, apostila, ano, especialidade, parte, {
-                'mt-quadro-01': true,
-            }) }, markdown(produto, especialidade)));
+        return (h(Host, { key: '1350c205db2b9aeca0a0c2aec15115ae90c22f63', class: "mt-quadro-01" }, h("div", { key: '0f5873f6cc5cee7b10fc46cbc3694157be58c222', class: "mt-quadro-01__title" }, h("slot", { key: 'ded79f437fd090e676bfb37344b7369a2ca33715', name: "title" })), h("p", { key: 'cd9f1a84b1400458203723e412b5e2824c7c9f82', class: "mt-quadro-01__text" }, h("slot", { key: '0831df921af3f48fc6cf7fbad9e00660eaffdeb1', name: "text" }))));
     }
     static get style() { return quadro01Css; }
-}, [262, "mt-quadro-01", {
-        "produto": [513],
-        "apostila": [513],
-        "ano": [513],
-        "especialidade": [513],
-        "parte": [513]
-    }]);
+}, [262, "mt-quadro-01"]);
 function defineCustomElement$1() {
     if (typeof customElements === "undefined") {
         return;

@@ -2,88 +2,88 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-.medtango {
+.mt-medtango {
   /* HTML5 display-role reset for older browsers */
 }
-.medtango div,
-.medtango span,
-.medtango applet,
-.medtango object,
-.medtango iframe,
-.medtango h1,
-.medtango h2,
-.medtango h3,
-.medtango h4,
-.medtango h5,
-.medtango h6,
-.medtango p,
-.medtango blockquote,
-.medtango pre,
-.medtango a,
-.medtango abbr,
-.medtango acronym,
-.medtango address,
-.medtango big,
-.medtango cite,
-.medtango code,
-.medtango del,
-.medtango dfn,
-.medtango em,
-.medtango img,
-.medtango ins,
-.medtango kbd,
-.medtango q,
-.medtango s,
-.medtango samp,
-.medtango small,
-.medtango strike,
-.medtango strong,
-.medtango sub,
-.medtango sup,
-.medtango tt,
-.medtango var,
-.medtango b,
-.medtango u,
-.medtango i,
-.medtango center,
-.medtango dl,
-.medtango dt,
-.medtango dd,
-.medtango ol,
-.medtango ul,
-.medtango li,
-.medtango fieldset,
-.medtango form,
-.medtango label,
-.medtango legend,
-.medtango table,
-.medtango caption,
-.medtango tbody,
-.medtango tfoot,
-.medtango thead,
-.medtango tr,
-.medtango th,
-.medtango td,
-.medtango article,
-.medtango aside,
-.medtango canvas,
-.medtango details,
-.medtango embed,
-.medtango figure,
-.medtango figcaption,
-.medtango footer,
-.medtango header,
-.medtango hgroup,
-.medtango menu,
-.medtango nav,
-.medtango output,
-.medtango ruby,
-.medtango section,
-.medtango summary,
-.medtango time,
-.medtango mark,
-.medtango audio,
-.medtango video {
+.mt-medtango div,
+.mt-medtango span,
+.mt-medtango applet,
+.mt-medtango object,
+.mt-medtango iframe,
+.mt-medtango h1,
+.mt-medtango h2,
+.mt-medtango h3,
+.mt-medtango h4,
+.mt-medtango h5,
+.mt-medtango h6,
+.mt-medtango p,
+.mt-medtango blockquote,
+.mt-medtango pre,
+.mt-medtango a,
+.mt-medtango abbr,
+.mt-medtango acronym,
+.mt-medtango address,
+.mt-medtango big,
+.mt-medtango cite,
+.mt-medtango code,
+.mt-medtango del,
+.mt-medtango dfn,
+.mt-medtango em,
+.mt-medtango img,
+.mt-medtango ins,
+.mt-medtango kbd,
+.mt-medtango q,
+.mt-medtango s,
+.mt-medtango samp,
+.mt-medtango small,
+.mt-medtango strike,
+.mt-medtango strong,
+.mt-medtango sub,
+.mt-medtango sup,
+.mt-medtango tt,
+.mt-medtango var,
+.mt-medtango b,
+.mt-medtango u,
+.mt-medtango i,
+.mt-medtango center,
+.mt-medtango dl,
+.mt-medtango dt,
+.mt-medtango dd,
+.mt-medtango ol,
+.mt-medtango ul,
+.mt-medtango li,
+.mt-medtango fieldset,
+.mt-medtango form,
+.mt-medtango label,
+.mt-medtango legend,
+.mt-medtango table,
+.mt-medtango caption,
+.mt-medtango tbody,
+.mt-medtango tfoot,
+.mt-medtango thead,
+.mt-medtango tr,
+.mt-medtango th,
+.mt-medtango td,
+.mt-medtango article,
+.mt-medtango aside,
+.mt-medtango canvas,
+.mt-medtango details,
+.mt-medtango embed,
+.mt-medtango figure,
+.mt-medtango figcaption,
+.mt-medtango footer,
+.mt-medtango header,
+.mt-medtango hgroup,
+.mt-medtango menu,
+.mt-medtango nav,
+.mt-medtango output,
+.mt-medtango ruby,
+.mt-medtango section,
+.mt-medtango summary,
+.mt-medtango time,
+.mt-medtango mark,
+.mt-medtango audio,
+.mt-medtango video {
   font-size: 100%;
   line-height: 1 !important;
   margin: 0;
@@ -92,38 +92,38 @@
   font: inherit;
   vertical-align: baseline;
 }
-.medtango article,
-.medtango aside,
-.medtango details,
-.medtango figcaption,
-.medtango figure,
-.medtango footer,
-.medtango header,
-.medtango hgroup,
-.medtango menu,
-.medtango nav,
-.medtango section {
+.mt-medtango article,
+.mt-medtango aside,
+.mt-medtango details,
+.mt-medtango figcaption,
+.mt-medtango figure,
+.mt-medtango footer,
+.mt-medtango header,
+.mt-medtango hgroup,
+.mt-medtango menu,
+.mt-medtango nav,
+.mt-medtango section {
   display: block;
 }
-.medtango body {
+.mt-medtango body {
   line-height: 1;
 }
-.medtango ol,
-.medtango ul {
+.mt-medtango ol,
+.mt-medtango ul {
   list-style: none;
 }
-.medtango blockquote,
-.medtango q {
+.mt-medtango blockquote,
+.mt-medtango q {
   quotes: none;
 }
-.medtango blockquote:before,
-.medtango blockquote:after,
-.medtango q:before,
-.medtango q:after {
+.mt-medtango blockquote:before,
+.mt-medtango blockquote:after,
+.mt-medtango q:before,
+.mt-medtango q:after {
   content: "";
   content: none;
 }
-.medtango table {
+.mt-medtango table {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -177,4 +177,27 @@
   --mt-color-tabela-bg-06: #ecefee;
   --mt-color-tabela-linha-01: #ffffff;
   --mt-color-tabela-linha-02: #9abec0;
+}
+
+.mt-fig {
+  color: #455a5a;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.pull-right {
+  --mt-pull-right-width: 50%;
+  --mt-pull-right-shape-margin: 24px;
+  --mt-pull-right-margin: 0 0 0 24px;
+  margin: var(--mt-pull-right-margin);
+  width: var(--mt-pull-right-width);
+  shape-outside: content-box;
+  float: right;
+  shape-margin: var(--mt-pull-right-shape-margin);
+}
+
+.mt-medtango {
+  background-color: #282828;
 }

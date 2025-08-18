@@ -1,0 +1,36 @@
+:host {
+  --mt-titulo-h1-padding: 0 0 0 14px;
+  --mt-titulo-h1-margin: 0;
+  margin: var(--mt-titulo-h1-margin);
+  padding: var(--mt-titulo-h1-padding);
+  border-left: 14px solid #9abec0;
+  display: block;
+}
+
+.mt-titulo-h1__pre-title {
+  color: #9a999e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.mt-titulo-h1__title {
+  color: #455a5a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.mt-titulo-h1__subtitle {
+  color: #9abec0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}

@@ -1,43 +1,17 @@
-import { h, p as proxyCustomElement, H, a as Host } from './index.js';
-import { M as MtProdutosEnum, a as MtEspecialidadesEnum, g as generateClasses } from './p-M0FWbnS6.js';
+import { p as proxyCustomElement, H, h, a as Host } from './index.js';
 
-const markdown = (produto, especialidade, _apostila, _parte, _ano) => {
-    if (produto === MtProdutosEnum.MEDCURSO) {
-        if (especialidade === MtEspecialidadesEnum.NEF) {
-            return (h("h5", { class: "mt-titulo-h5__text" },
-                h("slot", null)));
-        }
-    }
-    return (h("h5", null,
-        h("slot", null)));
-};
-
-const tituloH5Css = "@charset \"UTF-8\";.sc-mt-titulo-h5-h{--mt-titulo-h5-text-color:var(--mt-color-titulos-h5-fonte);--mt-titulo-h5-text-font-family:\"Roboto\", sans-serif;--mt-titulo-h5-text-font-weight:800;--mt-titulo-h5-text-font-size:10px;--mt-titulo-h5-text-content:\"▶\"}.mt-titulo-h5__text.sc-mt-titulo-h5{color:var(--mt-titulo-h5-text-color);font-family:var(--mt-titulo-h5-text-font-family);font-weight:var(--mt-titulo-h5-text-font-weight);font-size:var(--mt-titulo-h5-text-font-size)}.mt-titulo-h5__text.sc-mt-titulo-h5::before{content:var(--mt-titulo-h5-text-content);color:inherit}.sc-mt-titulo-h5-h{display:block}";
+const tituloH5Css = "@charset \"UTF-8\";.sc-mt-titulo-h5-h{--mt-titulo-h5-padding:0;--mt-titulo-h5-margin:0;color:#455a5a;font-family:\"Asap Condensed\", sans-serif;font-weight:600;font-size:13px;line-height:1;margin:var(--mt-titulo-h5-margin);padding:var(--mt-titulo-h5-padding);letter-spacing:1px}.mt-titulo-h5.sc-mt-titulo-h5::before{content:\"▶\";color:inherit;font-size:8px;position:relative;bottom:2px}";
 
 const TituloH5 = /*@__PURE__*/ proxyCustomElement(class TituloH5 extends H {
     constructor() {
         super();
         this.__registerHost();
     }
-    produto;
-    apostila;
-    ano;
-    especialidade;
-    parte;
     render() {
-        const { produto, especialidade, apostila, parte, ano } = this;
-        return (h(Host, { key: 'aae0747f2949e323647d2b6b2dae5e66d7afad2b', class: generateClasses(produto, apostila, ano, especialidade, parte, {
-                'mt-titulo-h5': true,
-            }) }, markdown(produto, especialidade)));
+        return (h(Host, { key: 'bcdd1f804287d4f3a15c487607ca11cffe55b67e', class: "mt-titulo-h5" }, h("h5", { key: '3b5a4a4b6158085f55dee769a6b424482af16edd' }, h("slot", { key: '5202a20cb2c247b0ef926fb2e3b429bba93298b4' }))));
     }
     static get style() { return tituloH5Css; }
-}, [262, "mt-titulo-h5", {
-        "produto": [513],
-        "apostila": [513],
-        "ano": [513],
-        "especialidade": [513],
-        "parte": [513]
-    }]);
+}, [262, "mt-titulo-h5"]);
 function defineCustomElement$1() {
     if (typeof customElements === "undefined") {
         return;

@@ -1,0 +1,15 @@
+:host {
+  --mt-titulo-h3-padding: 4px 0 0 0;
+  --mt-titulo-h3-margin: 0;
+  --mt-titulo-h3-display: block;
+  color: #607b7a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+  margin: var(--mt-titulo-h3-margin);
+  padding: var(--mt-titulo-h3-padding);
+  border-top: 6px solid #ccdfdf;
+  display: var(--mt-titulo-h3-display);
+  letter-spacing: 1px;
+}

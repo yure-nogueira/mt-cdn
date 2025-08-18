@@ -1,0 +1,22 @@
+:host {
+  border-left: 3px solid #455a5a;
+  display: block;
+}
+
+.mt-quadro-01__title {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 2px 10px;
+  background-color: #455a5a;
+  display: inline-block;
+}
+.mt-quadro-01__text {
+  color: #455a5a;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 6px;
+}

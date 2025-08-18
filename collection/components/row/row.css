@@ -1,0 +1,38 @@
+:host {
+  --mt-gutter-right: 24px;
+  --mt-gutter-left: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-0.5 * var(--mt-gutter-right));
+  margin-left: calc(-0.5 * var(--mt-gutter-left));
+}
+@media (min-width: 576px) {
+  :host {
+    margin-right: calc(-0.5 * var(--mt-gutter-sm-right));
+    margin-left: calc(-0.5 * var(--mt-gutter-sm-left));
+  }
+}
+@media (min-width: 768px) {
+  :host {
+    margin-right: calc(-0.5 * var(--mt-gutter-md-right));
+    margin-left: calc(-0.5 * var(--mt-gutter-md-left));
+  }
+}
+@media (min-width: 992px) {
+  :host {
+    margin-right: calc(-0.5 * var(--mt-gutter-lg-right));
+    margin-left: calc(-0.5 * var(--mt-gutter-lg-left));
+  }
+}
+@media (min-width: 1200px) {
+  :host {
+    margin-right: calc(-0.5 * var(--mt-gutter-xl-right));
+    margin-left: calc(-0.5 * var(--mt-gutter-xl-left));
+  }
+}
+@media (min-width: 1400px) {
+  :host {
+    margin-right: calc(-0.5 * var(--mt-gutter-xxl-right));
+    margin-left: calc(-0.5 * var(--mt-gutter-xxl-left));
+  }
+}

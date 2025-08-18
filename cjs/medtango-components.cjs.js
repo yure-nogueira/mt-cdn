@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-D-YE1rsj.js');
+var index = require('./index-CtT_xTgK.js');
 var appGlobals = require('./app-globals-V2Kpy_OQ.js');
 
 var _documentCurrentScript = typeof document !== 'undefined' ? document.currentScript : null;
@@ -19,7 +19,7 @@ var patchBrowser = () => {
 
 patchBrowser().then(async (options) => {
   await appGlobals.globalScripts();
-  return index.bootstrapLazy([["mt-paragrafo.cjs",[[262,"mt-paragrafo",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-quadro-01.cjs",[[262,"mt-quadro-01",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-quadro-02.cjs",[[262,"mt-quadro-02",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-quadro-03.cjs",[[262,"mt-quadro-03",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-quadro-04.cjs",[[262,"mt-quadro-04",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-quadro-05.cjs",[[262,"mt-quadro-05",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-titulo-h1.cjs",[[262,"mt-titulo-h1",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-titulo-h2.cjs",[[262,"mt-titulo-h2",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-titulo-h3.cjs",[[262,"mt-titulo-h3",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-titulo-h4.cjs",[[262,"mt-titulo-h4",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-titulo-h5.cjs",[[262,"mt-titulo-h5",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]],["mt-titulo-resumo.cjs",[[262,"mt-titulo-resumo",{"produto":[513],"apostila":[513],"ano":[513],"especialidade":[513],"parte":[513]}]]]], options);
+  return index.bootstrapLazy([["mt-background.cjs",[[262,"mt-background"]]],["mt-col.cjs",[[262,"mt-col",{"breakpoint":[513]}]]],["mt-container.cjs",[[262,"mt-container"]]],["mt-content.cjs",[[262,"mt-content"]]],["mt-footer.cjs",[[262,"mt-footer"]]],["mt-list.cjs",[[262,"mt-list"]]],["mt-page.cjs",[[262,"mt-page"]]],["mt-paragrafo.cjs",[[262,"mt-paragrafo"]]],["mt-quadro-01.cjs",[[262,"mt-quadro-01"]]],["mt-quadro-02.cjs",[[262,"mt-quadro-02"]]],["mt-quadro-pictograma-01.cjs",[[262,"mt-quadro-pictograma-01"]]],["mt-row.cjs",[[262,"mt-row"]]],["mt-titulo-h1.cjs",[[262,"mt-titulo-h1"]]],["mt-titulo-h2.cjs",[[262,"mt-titulo-h2"]]],["mt-titulo-h3.cjs",[[262,"mt-titulo-h3"]]],["mt-titulo-h5.cjs",[[262,"mt-titulo-h5"]]],["mt-titulo-resumo.cjs",[[262,"mt-titulo-resumo"]]]], options);
 });
 
 exports.setNonce = index.setNonce;

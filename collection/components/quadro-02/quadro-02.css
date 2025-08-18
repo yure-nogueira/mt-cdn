@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.mt-quadro-02__left {
+  margin: 0 6px 0 0;
+}
+.mt-quadro-02__inner-container {
+  padding: 12px;
+  background-color: #e0eeed;
+  flex: 1;
+}
+.mt-quadro-02__title {
+  color: #9abec0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+}
+.mt-quadro-02__text {
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}

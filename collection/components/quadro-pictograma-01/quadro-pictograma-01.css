@@ -1,0 +1,20 @@
+:host {
+  --mt-quadro-pictograma-01-margin: 0;
+  margin: var(--mt-quadro-pictograma-01-margin);
+  padding: 1px;
+  background-color: #ccdfdf;
+  border: 1px solid #9abec0;
+  display: block;
+}
+
+.mt-quadro-pictograma-01__container {
+  padding: 4px 8px;
+  border: 1px solid #9abec0;
+}
+.mt-quadro-pictograma-01__text {
+  color: #455a5a;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+}

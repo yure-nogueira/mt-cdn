@@ -1,43 +1,17 @@
-import { h, p as proxyCustomElement, H, a as Host } from './index.js';
-import { M as MtProdutosEnum, a as MtEspecialidadesEnum, g as generateClasses } from './p-M0FWbnS6.js';
+import { p as proxyCustomElement, H, h, a as Host } from './index.js';
 
-const markdown = (produto, especialidade, _apostila, _parte, _ano) => {
-    if (produto === MtProdutosEnum.MEDCURSO) {
-        if (especialidade === MtEspecialidadesEnum.NEF) {
-            return (h("p", { class: "mt-paragrafo__text" },
-                h("slot", null)));
-        }
-    }
-    return (h("p", null,
-        h("slot", null)));
-};
-
-const paragrafoCss = ".sc-mt-paragrafo-h{--mt-paragrafo-text-color:var(--mt-color-textos-paragrafo-fonte);--mt-paragrafo-text-font-family:\"Noto Sans\", sans-serif;--mt-paragrafo-text-font-weight:400;--mt-paragrafo-text-font-size:16px;--mt-paragrafo-strong-color:var(--mt-color-textos-paragrafo-strong);--mt-paragrafo-strong-font-weight:700;--mt-paragrafo-strong-text-transform:uppercase;--mt-paragrafo-strong-font-style:italic;--mt-paragrafo-underline-text-decoration-color:var(--mt-color-textos-paragrafo-underline)}.mt-paragrafo__text.sc-mt-paragrafo{color:var(--mt-paragrafo-text-color);font-family:var(--mt-paragrafo-text-font-family);font-weight:var(--mt-paragrafo-text-font-weight);font-size:var(--mt-paragrafo-text-font-size);line-height:1;margin:0}.sc-mt-paragrafo-s strong{color:var(--mt-paragrafo-strong-color);font-weight:var(--mt-paragrafo-strong-font-weight) !important;text-transform:var(--mt-paragrafo-strong-text-transform);font-style:var(--mt-paragrafo-strong-font-style) !important}.sc-mt-paragrafo-s u{text-decoration-color:var(--mt-paragrafo-underline-text-decoration-color)}.sc-mt-paragrafo-h{display:block}";
+const paragrafoCss = ".sc-mt-paragrafo-h{--mt-paragrafo-padding:0;--mt-paragrafo-margin:0;color:#000;font-family:\"Merriweather\", serif;font-weight:400;font-size:13px;line-height:1.3;margin:var(--mt-paragrafo-margin);padding:var(--mt-paragrafo-padding)}.sc-mt-paragrafo-s>u{text-decoration-color:#9abec0}.sc-mt-paragrafo-s>ul{padding-left:32px}";
 
 const Paragrafo = /*@__PURE__*/ proxyCustomElement(class Paragrafo extends H {
     constructor() {
         super();
         this.__registerHost();
     }
-    produto;
-    apostila;
-    ano;
-    especialidade;
-    parte;
     render() {
-        const { produto, especialidade, apostila, parte, ano } = this;
-        return (h(Host, { key: '8648b120d74193cc04bcf4a68b9aae19f01dd05b', class: generateClasses(produto, apostila, ano, especialidade, parte, {
-                'mt-paragrafo': true,
-            }) }, markdown(produto, especialidade)));
+        return (h(Host, { key: 'abf961315539da692db9500b5505ef29765ce963', class: "mt-paragrafo" }, h("p", { key: 'dea8295db6567ee34b010eca62a9bf66ca1d81d3' }, h("slot", { key: '2c8c4244fec71f546db6230d3edfbccc819e535d' }))));
     }
     static get style() { return paragrafoCss; }
-}, [262, "mt-paragrafo", {
-        "produto": [513],
-        "apostila": [513],
-        "ano": [513],
-        "especialidade": [513],
-        "parte": [513]
-    }]);
+}, [262, "mt-paragrafo"]);
 function defineCustomElement$1() {
     if (typeof customElements === "undefined") {
         return;

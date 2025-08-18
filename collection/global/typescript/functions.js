@@ -8,4 +8,10 @@ export const generateClasses = (produto, apostila, ano, especialidade, parte, cs
         ...cssClassMap,
     };
 };
+export const generateClassesLayout = (breakpoint, cssClassMap) => {
+    return {
+        [`mt-${breakpoint}`]: true,
+        ...cssClassMap,
+    };
+};
 //# sourceMappingURL=functions.js.map

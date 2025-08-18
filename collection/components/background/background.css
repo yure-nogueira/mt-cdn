@@ -1,0 +1,6 @@
+:host {
+  --mt-background-padding: #fff;
+  --mt-background-background-color: #fff;
+  padding: var(--mt-background-padding);
+  background-color: var(--mt-background-background-color);
+}

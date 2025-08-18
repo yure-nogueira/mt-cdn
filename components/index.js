@@ -649,9 +649,7 @@ var createElm = (oldParentVNode, newParentVNode, childIndex) => {
       );
     }
   }
-  if (newVNode2.$text$ !== null) {
-    elm = newVNode2.$elm$ = win.document.createTextNode(newVNode2.$text$);
-  } else if (newVNode2.$flags$ & 1 /* isSlotReference */) {
+  if (newVNode2.$flags$ & 1 /* isSlotReference */) {
     elm = newVNode2.$elm$ = win.document.createTextNode("");
     {
       updateElement(null, newVNode2, isSvgMode);
@@ -865,18 +863,13 @@ var patch = (oldVNode, newVNode2, isInitialRender = false) => {
   const elm = newVNode2.$elm$ = oldVNode.$elm$;
   const oldChildren = oldVNode.$children$;
   const newChildren = newVNode2.$children$;
-  const text = newVNode2.$text$;
-  let defaultHolder;
-  if (text === null) {
+  {
     {
       updateElement(oldVNode, newVNode2, isSvgMode);
     }
     if (oldChildren !== null && newChildren !== null) {
       updateChildren(elm, oldChildren, newVNode2, newChildren, isInitialRender);
     } else if (newChildren !== null) {
-      if (oldVNode.$text$ !== null) {
-        elm.textContent = "";
-      }
       addVnodes(elm, null, newVNode2, newChildren, 0, newChildren.length - 1);
     } else if (
       // don't do this on initial render as it can cause non-hydrated content to be removed
@@ -884,10 +877,6 @@ var patch = (oldVNode, newVNode2, isInitialRender = false) => {
     ) {
       removeVnodes(oldChildren, 0, oldChildren.length - 1);
     } else ;
-  } else if ((defaultHolder = elm["s-cr"])) {
-    defaultHolder.parentNode.textContent = text;
-  } else if (oldVNode.$text$ !== text) {
-    elm.data = text;
   }
 };
 var relocateNodes = [];

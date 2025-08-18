@@ -1,33 +1,13 @@
-import { h, r as registerInstance, H as Host } from './index-Cs-n2LsI.js';
-import { M as MtProdutosEnum, a as MtEspecialidadesEnum, g as generateClasses } from './enums-M0FWbnS6.js';
+import { r as registerInstance, h, H as Host } from './index-Bau8JtQz.js';
 
-const markdown = (produto, especialidade, _apostila, _parte, _ano) => {
-    if (produto === MtProdutosEnum.MEDCURSO) {
-        if (especialidade === MtEspecialidadesEnum.NEF) {
-            return (h("h3", { class: "mt-titulo-h3__text" },
-                h("slot", null)));
-        }
-    }
-    return (h("h3", null,
-        h("slot", null)));
-};
-
-const tituloH3Css = ".sc-mt-titulo-h3-h{--mt-titulo-h3-text-color:var(--mt-color-titulos-h3-fonte);--mt-titulo-h3-text-font-family:\"Roboto\", sans-serif;--mt-titulo-h3-text-font-weight:900;--mt-titulo-h3-text-font-size:14px;--mt-titulo-h3-line-color:var(--mt-color-titulos-h2-linha);--mt-titulo-h3-line-height:4px;--mt-titulo-h3-line-padding:4px 0 0 0}.mt-titulo-h3__text.sc-mt-titulo-h3{color:var(--mt-titulo-h3-text-color);font-family:var(--mt-titulo-h3-text-font-family);font-weight:var(--mt-titulo-h3-text-font-weight);font-size:var(--mt-titulo-h3-text-font-size);padding:var(--mt-titulo-h3-line-padding);border-top:var(--mt-titulo-h3-line-height) solid var(--mt-titulo-h3-line-color)}.sc-mt-titulo-h3-h{display:block}";
+const tituloH3Css = ".sc-mt-titulo-h3-h{--mt-titulo-h3-padding:4px 0 0 0;--mt-titulo-h3-margin:0;--mt-titulo-h3-display:block;color:#607b7a;font-family:\"Roboto\", sans-serif;font-weight:900;font-size:18px;line-height:1;margin:var(--mt-titulo-h3-margin);padding:var(--mt-titulo-h3-padding);border-top:6px solid #ccdfdf;display:var(--mt-titulo-h3-display);letter-spacing:1px}";
 
 const TituloH3 = class {
     constructor(hostRef) {
         registerInstance(this, hostRef);
     }
-    produto;
-    apostila;
-    ano;
-    especialidade;
-    parte;
     render() {
-        const { produto, especialidade, apostila, parte, ano } = this;
-        return (h(Host, { key: '2ccb1a0a70928d9446271dc43e63814c73c30bc2', class: generateClasses(produto, apostila, ano, especialidade, parte, {
-                'mt-titulo-h3': true,
-            }) }, markdown(produto, especialidade)));
+        return (h(Host, { key: '459ce01898e8fa1013f7fe05ab762f13686428ed', class: "mt-titulo-h3" }, h("h3", { key: 'e067d3b64e441a2a2c08aae4e9b4113d4256f85b' }, h("slot", { key: '907231d1267d4d7ac33b4dfa699e50da30abc2a9' }))));
     }
 };
 TituloH3.style = tituloH3Css;
