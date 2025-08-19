@@ -46,7 +46,7 @@ export const Default = {
           </ul>
         </mt-list>
 
-        <mt-quadro-01 class="mt-quadro-01">
+        <mt-quadro-01>
           <span slot="title">IPSUM!</span>
 
           <span slot="text">
