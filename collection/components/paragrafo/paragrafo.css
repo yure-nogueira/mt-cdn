@@ -1,6 +1,8 @@
 :host {
   --mt-paragrafo-padding: 0;
   --mt-paragrafo-margin: 0;
+}
+:host p {
   color: #000;
   font-family: "Merriweather", serif;
   font-weight: 400;

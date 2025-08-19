@@ -77,6 +77,64 @@ export const Default = {
             ipsam, is molorpore.
           </p>
         </mt-quadro-pictograma-01>
+
+        <mt-floated>
+          <img
+            slot="image-right"
+            src="/1.png"
+            alt="image"
+            style="
+                  --mt-imagem-floated-image: url(/1.png);
+                  --mt-imagem-floated-direction: right;
+                  --mt-imagem-floated-margin: 50px 0 0 0;
+                "
+          />
+          <p slot="text">
+            Sequam rerum quae ius iliquias nonse conese re quiam harcimaximus que id
+            eliquatia dolest ipsam, is molorpore nihicto odis minumr eliquatia dolest
+            ipsam, is molorpore. Sequam rerum quae ius iliquias nonse conese re quiam
+            harcimaximus que id eliquatia dolest ipsam, is molorpore nihicto odis minumr
+            eliquatia dolest ipsam, is molorpore. Sequam rerum quae ius iliquias nonse
+            conese re quiam harcimaximus que id eliquatia dolest ipsam, is molorpore
+            nihicto odis minumr eliquatia dolest ipsam, is molorpore. Sequam rerum quae
+            ius iliquias nonse conese re quiam harcimaximus que id eliquatia dolest ipsam,
+            is molorpore nihicto odis minumr eliquatia dolest ipsam, is molorpore. Sequam
+            rerum quae ius iliquias nonse conese re quiam harcimaximus que id eliquatia
+            dolest ipsam, is molorpore nihicto odis minumr eliquatia dolest ipsam, is
+            molorpore.
+          </p>
+        </mt-floated>
+
+        <mt-columns style="--mt-columns-number: 2; --mt-columns-max-width: 600px">
+          <p style="--mt-paragrafo-margin: 0 0 16px 0">
+            O equam rerum quae ius iliquias nonse (<span class="mt-fig">fig. 1</span>)!
+            Sequam rerum quae ius iliquias nonse conese re quiam harcimaximus que id
+            eliquatia dolest ipsam, is molorpore nihicto. Is molorpore nihicto.
+          </p>
+
+          <p style="--mt-paragrafo-margin: 0 0 16px 0">
+            <strong>Orequam</strong> rerum quae ius iliquias nonse conese re quiam
+            harcimaximus que id eliquatia dolest ipsam, is molorpore nihicto. Is
+            <strong>molorpore</strong> nihicto. molorpore nihicto. Is molorpore
+            <strong>nihicto.</strong>
+          </p>
+
+          <p style="--mt-paragrafo-margin: 0 0 16px 0">
+            <strong>Orequam</strong> rerum quae ius iliquias nonse conese re quiam
+            harcimaximus que id eliquatia dolest ipsam, is
+            <strong>molorpore</strong>
+            nihicto. Is molorpore nihicto. molorpore nihicto. Is molorpore
+            <strong>nihicto.</strong>
+          </p>
+
+          <p style="--mt-paragrafo-margin: 0 0 16px 0">
+            Nequam <strong>rerum</strong> quae ius iliquias nonse conese re quiam
+            harcimaximus que id eliquatia dolest ipsam, is molorpore nihicto odis minum
+            adio quas as di <strong>consed</strong> qui cum quaspis is
+            <strong>voluptatia</strong> perchil iquiditate <strong>simus</strong>, in
+            peris et audae et ra culloriai.
+          </p>
+        </mt-columns>
       </mt-content>
       <mt-footer>
         <span slot="start">CICLO 1 - MEDCURSO</span>

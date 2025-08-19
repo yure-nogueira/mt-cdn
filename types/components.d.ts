@@ -11,9 +11,13 @@ export namespace Components {
     interface MtCol {
         "breakpoint": string;
     }
+    interface MtColumns {
+    }
     interface MtContainer {
     }
     interface MtContent {
+    }
+    interface MtFloated {
     }
     interface MtFooter {
     }
@@ -55,6 +59,12 @@ declare global {
         prototype: HTMLMtColElement;
         new (): HTMLMtColElement;
     };
+    interface HTMLMtColumnsElement extends Components.MtColumns, HTMLStencilElement {
+    }
+    var HTMLMtColumnsElement: {
+        prototype: HTMLMtColumnsElement;
+        new (): HTMLMtColumnsElement;
+    };
     interface HTMLMtContainerElement extends Components.MtContainer, HTMLStencilElement {
     }
     var HTMLMtContainerElement: {
@@ -66,6 +76,12 @@ declare global {
     var HTMLMtContentElement: {
         prototype: HTMLMtContentElement;
         new (): HTMLMtContentElement;
+    };
+    interface HTMLMtFloatedElement extends Components.MtFloated, HTMLStencilElement {
+    }
+    var HTMLMtFloatedElement: {
+        prototype: HTMLMtFloatedElement;
+        new (): HTMLMtFloatedElement;
     };
     interface HTMLMtFooterElement extends Components.MtFooter, HTMLStencilElement {
     }
@@ -148,8 +164,10 @@ declare global {
     interface HTMLElementTagNameMap {
         "mt-background": HTMLMtBackgroundElement;
         "mt-col": HTMLMtColElement;
+        "mt-columns": HTMLMtColumnsElement;
         "mt-container": HTMLMtContainerElement;
         "mt-content": HTMLMtContentElement;
+        "mt-floated": HTMLMtFloatedElement;
         "mt-footer": HTMLMtFooterElement;
         "mt-list": HTMLMtListElement;
         "mt-page": HTMLMtPageElement;
@@ -171,9 +189,13 @@ declare namespace LocalJSX {
     interface MtCol {
         "breakpoint"?: string;
     }
+    interface MtColumns {
+    }
     interface MtContainer {
     }
     interface MtContent {
+    }
+    interface MtFloated {
     }
     interface MtFooter {
     }
@@ -204,8 +226,10 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "mt-background": MtBackground;
         "mt-col": MtCol;
+        "mt-columns": MtColumns;
         "mt-container": MtContainer;
         "mt-content": MtContent;
+        "mt-floated": MtFloated;
         "mt-footer": MtFooter;
         "mt-list": MtList;
         "mt-page": MtPage;
@@ -227,8 +251,10 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "mt-background": LocalJSX.MtBackground & JSXBase.HTMLAttributes<HTMLMtBackgroundElement>;
             "mt-col": LocalJSX.MtCol & JSXBase.HTMLAttributes<HTMLMtColElement>;
+            "mt-columns": LocalJSX.MtColumns & JSXBase.HTMLAttributes<HTMLMtColumnsElement>;
             "mt-container": LocalJSX.MtContainer & JSXBase.HTMLAttributes<HTMLMtContainerElement>;
             "mt-content": LocalJSX.MtContent & JSXBase.HTMLAttributes<HTMLMtContentElement>;
+            "mt-floated": LocalJSX.MtFloated & JSXBase.HTMLAttributes<HTMLMtFloatedElement>;
             "mt-footer": LocalJSX.MtFooter & JSXBase.HTMLAttributes<HTMLMtFooterElement>;
             "mt-list": LocalJSX.MtList & JSXBase.HTMLAttributes<HTMLMtListElement>;
             "mt-page": LocalJSX.MtPage & JSXBase.HTMLAttributes<HTMLMtPageElement>;

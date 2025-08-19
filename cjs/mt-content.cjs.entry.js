@@ -9,7 +9,7 @@ const Content = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: '6003087948fc6dc3191803768f8ee5401aa7e387', class: "mt-content" }, index.h("slot", { key: '6f6c323620d7e82783626942cb8dc7487489df1c' })));
+        return (index.h(index.Host, { key: 'ccbdeaaacae75942083f823627bfd9649eb1af66', class: "mt-content" }, index.h("slot", { key: '7897329f08ce666b7c335f5722e83861fdb38c70' })));
     }
 };
 Content.style = contentCss;

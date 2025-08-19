@@ -84,8 +84,6 @@
 .mt-medtango mark,
 .mt-medtango audio,
 .mt-medtango video {
-  font-size: 100%;
-  line-height: 1 !important;
   margin: 0;
   padding: 0;
   border: 0;

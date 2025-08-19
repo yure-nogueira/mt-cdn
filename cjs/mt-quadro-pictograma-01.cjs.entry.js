@@ -9,7 +9,7 @@ const QuadroPictograma01 = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: 'e6cf15ffcd4845daca0e1e14520ef2a2a3888004', class: "mt-quadro-pictograma-01" }, index.h("div", { key: '43fd1e9783f8ef280bc78924028a6de387633909', class: "mt-quadro-pictograma-01__container" }, index.h("p", { key: 'bddd6283dce367894df1c9bb14928dbbecd7d9b3', class: "mt-quadro-pictograma-01__text" }, index.h("slot", { key: '21f7d979132ba2394fda8c020a776e07f9d94e71' })))));
+        return (index.h(index.Host, { key: '466f1528a104d7ace71cde1b7f7d61971b620741', class: "mt-quadro-pictograma-01" }, index.h("div", { key: '7eed57018e3603afbb28b3ff81086650300fa47f', class: "mt-quadro-pictograma-01__container" }, index.h("p", { key: '0e4f7176ef9c5cefa09ca3003c75d50617103084', class: "mt-quadro-pictograma-01__text" }, index.h("slot", { key: '8783e67b46a257dd44bbbada71a5833385d4d90e' })))));
     }
 };
 QuadroPictograma01.style = quadroPictograma01Css;

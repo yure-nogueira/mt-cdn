@@ -1,0 +1,2 @@
+import{r as t,h as c,H as e}from"./p-Bau8JtQz.js";const s=".sc-mt-content-h{height:100%;display:block}";const a=class{constructor(c){t(this,c)}render(){return c(e,{key:"ccbdeaaacae75942083f823627bfd9649eb1af66",class:"mt-content"},c("slot",{key:"7897329f08ce666b7c335f5722e83861fdb38c70"}))}};a.style=s;export{a as mt_content};
+//# sourceMappingURL=p-d9c9fad5.entry.js.map

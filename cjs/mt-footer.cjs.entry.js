@@ -9,7 +9,7 @@ const Footer = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: '1cbf2aea3ad38974b6a42fd18e0be06057112aa7', class: "mt-footer" }, index.h("div", { key: '52fe3bf26609dbbe7cacdcf46e70c2423937074e', class: "mt-container" }, index.h("span", { key: 'e4c43ec6085d619d5ae42bfe582500448146ba65', class: "mt-footer__left" }, index.h("slot", { key: '5df8653f463a858b1eede33092aca8b95c383d75', name: "start" })), index.h("span", { key: 'a795548099bf40b2ba2c7391ae9882f3bb549d87', class: "mt-footer__middle" }, index.h("slot", { key: '5c21e9f0ec879e56fe03e08c1c45b898e5626107' })), index.h("span", { key: '9127a5a0be7f20addfff7f01561e08a8acdf0068', class: "mt-footer__right" }, index.h("slot", { key: '2b7fdb42049dcc2429586d74760f76327d206c59', name: "end" })))));
+        return (index.h(index.Host, { key: '7da9be8effb85128c179fe254f5f9da4558b3bd3', class: "mt-footer" }, index.h("div", { key: '7af698a9abf866008dd1b8678122a991d43c9ba1', class: "mt-container" }, index.h("span", { key: 'dbf07540c58cd8bedabe3e4c3dafb76a6c9ea66d', class: "mt-footer__left" }, index.h("slot", { key: 'd8d7bb9bf59dd0ec3465acadefd7eb5a3597748b', name: "start" })), index.h("span", { key: '847e7aaead6aabc7b973fa803366d49752b71722', class: "mt-footer__middle" }, index.h("slot", { key: 'c7c4909858ac147c142eb38b124708560e38b8ea' })), index.h("span", { key: '8add11263f05eef314b76792525536c75aab6d28', class: "mt-footer__right" }, index.h("slot", { key: '33fa96cac9a237b1a1235cf65dfbd88b00828187', name: "end" })))));
     }
 };
 Footer.style = footerCss;

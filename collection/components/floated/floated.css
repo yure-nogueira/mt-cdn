@@ -1,0 +1,18 @@
+:host {
+  --mt-imagem-floated-image: null;
+  --mt-imagem-floated-direction: null;
+  --mt-imagem-floated-margin: null;
+  display: block;
+}
+:host::after {
+  content: "";
+  display: table; /* or block */
+  clear: both;
+}
+
+::slotted(img) {
+  shape-outside: var(--mt-imagem-floated-image);
+  float: var(--mt-imagem-floated-direction);
+  margin: var(--mt-imagem-floated-margin);
+  max-width: 100%;
+}

@@ -9,7 +9,7 @@ const TituloH5 = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: 'bcdd1f804287d4f3a15c487607ca11cffe55b67e', class: "mt-titulo-h5" }, index.h("h5", { key: '3b5a4a4b6158085f55dee769a6b424482af16edd' }, index.h("slot", { key: '5202a20cb2c247b0ef926fb2e3b429bba93298b4' }))));
+        return (index.h(index.Host, { key: '1c438e656b92dc846cd11717226c0ad70c01e0b2', class: "mt-titulo-h5" }, index.h("h5", { key: '88f442efe51a4d115956c170d540b373c513e1ae' }, index.h("slot", { key: '3bc7829dd6f2d1a012f7572cece1877301153651' }))));
     }
 };
 TituloH5.style = tituloH5Css;

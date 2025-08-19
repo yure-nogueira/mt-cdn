@@ -1,2 +1,0 @@
-import{r as s,h as t,H as o}from"./p-Bau8JtQz.js";const f='.sc-mt-list-h{color:#607b7a;font-family:"Roboto Condensed", sans-serif;font-weight:400;font-size:14px;margin:16px 0 24px 0;padding-left:32px}';const a=class{constructor(t){s(this,t)}render(){return t(o,{key:"5bd25c7f5b86ff4c72a2f7920296df8776932071",class:"mt-list"},t("slot",{key:"92e28d35b2687f2aff9b48a13652371af27ee135"}))}};a.style=f;export{a as mt_list};
-//# sourceMappingURL=p-c314b465.entry.js.map

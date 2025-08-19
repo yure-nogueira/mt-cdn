@@ -2,8 +2,10 @@
   "entries": [
     "components/background/background.js",
     "components/col/col.js",
+    "components/columns/columns.js",
     "components/container/container.js",
     "components/content/content.js",
+    "components/floated/floated.js",
     "components/footer/footer.js",
     "components/list/list.js",
     "components/page/page.js",

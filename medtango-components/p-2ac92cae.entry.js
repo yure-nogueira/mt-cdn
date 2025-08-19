@@ -1,0 +1,2 @@
+import{r as s,h as t,H as e}from"./p-Bau8JtQz.js";const o='.sc-mt-list-h{color:#607b7a;font-family:"Roboto Condensed", sans-serif;font-weight:400;font-size:14px;margin:16px 0 24px 0;padding-left:32px}';const a=class{constructor(t){s(this,t)}render(){return t(e,{key:"e5772382b51c2283364f73637c878a6935e420ac",class:"mt-list"},t("slot",{key:"741f1f2346b5f2d5e8f400eed4467bfc917b601e"}))}};a.style=o;export{a as mt_list};
+//# sourceMappingURL=p-2ac92cae.entry.js.map
