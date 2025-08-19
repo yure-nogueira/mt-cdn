@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-CtT_xTgK.js');
+var index = require('./index-Bc9EaQF1.js');
 
 const columnsCss = ".sc-mt-columns-h{margin:0 auto;display:block;column-count:var(--mt-columns-number);column-gap:var(--mt-column-gap);max-width:var(--mt-columns-max-width);--mt-columns-number:null;--mt-columns-max-width:100%;--mt-column-gap:40px}";
 

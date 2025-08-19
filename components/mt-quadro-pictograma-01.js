@@ -8,7 +8,7 @@ const QuadroPictograma01 = /*@__PURE__*/ proxyCustomElement(class QuadroPictogra
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: '466f1528a104d7ace71cde1b7f7d61971b620741', class: "mt-quadro-pictograma-01" }, h("div", { key: '7eed57018e3603afbb28b3ff81086650300fa47f', class: "mt-quadro-pictograma-01__container" }, h("p", { key: '0e4f7176ef9c5cefa09ca3003c75d50617103084', class: "mt-quadro-pictograma-01__text" }, h("slot", { key: '8783e67b46a257dd44bbbada71a5833385d4d90e' })))));
+        return (h(Host, { key: '551a0c08b69e1da883628704f34ec71e2476a17c', class: "mt-quadro-pictograma-01" }, h("div", { key: 'd03e6a45e3ab168718bb12a253ca0d9b8361d07a', class: "mt-quadro-pictograma-01__container" }, h("p", { key: '2b8e5a600cbff56e20c558224aa44be99962aeae', class: "mt-quadro-pictograma-01__text" }, h("slot", { key: 'c67b8adf4efd38fe0f66179b10ccb86988e06a3c' })))));
     }
     static get style() { return quadroPictograma01Css; }
 }, [262, "mt-quadro-pictograma-01"]);

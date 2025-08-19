@@ -80,7 +80,7 @@ export const Default = {
 
         <mt-floated>
           <img
-            slot="image-right"
+            slot="image"
             src="/1.png"
             alt="image"
             style="

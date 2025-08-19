@@ -1,3 +1,5 @@
+'use strict';
+
 const NAMESPACE = 'medtango-components';
 const BUILD = /* medtango-components */ { hydratedSelectorName: "hydrated", lazyLoad: true, shadowDom: false, slotRelocation: true, updatable: true, watchCallback: false };
 
@@ -551,6 +553,10 @@ var parsePropertyValue = (propValue, propType, isFormAssociated) => {
   }
   return propValue;
 };
+var getElement = (ref) => {
+  var _a;
+  return (_a = getHostRef(ref)) == null ? void 0 : _a.$hostElement$ ;
+};
 var emitEvent = (elm, name, opts) => {
   const ev = plt.ce(name, opts);
   elm.dispatchEvent(ev);
@@ -570,7 +576,11 @@ var setAccessor = (elm, memberName, oldValue, newValue, isSvg, flags, initialRen
       classList.remove(...oldClasses.filter((c) => c && !newClasses.includes(c)));
       classList.add(...newClasses.filter((c) => c && !oldClasses.includes(c)));
     }
-  } else if (memberName === "key") ; else {
+  } else if (memberName === "key") ; else if (memberName === "ref") {
+    if (newValue) {
+      newValue(elm);
+    }
+  } else {
     const isComplex = isComplexType(newValue);
     if ((isProp || isComplex && newValue !== null) && true) {
       try {
@@ -770,6 +780,7 @@ var removeVnodes = (vnodes, startIdx, endIdx) => {
     const vnode = vnodes[index];
     if (vnode) {
       const elm = vnode.$elm$;
+      nullifyVNodeRefs(vnode);
       if (elm) {
         {
           checkSlotFallbackVisibility = true;
@@ -962,6 +973,12 @@ var markSlotContentForRelocation = (elm) => {
     if (childNode.nodeType === 1 /* ElementNode */) {
       markSlotContentForRelocation(childNode);
     }
+  }
+};
+var nullifyVNodeRefs = (vNode) => {
+  {
+    vNode.$attrs$ && vNode.$attrs$.ref && vNode.$attrs$.ref(null);
+    vNode.$children$ && vNode.$children$.map(nullifyVNodeRefs);
   }
 };
 var insertBefore = (parent, newNode, reference) => {
@@ -1697,7 +1714,13 @@ var bootstrapLazy = (lazyBundles, options = {}) => {
 // src/runtime/nonce.ts
 var setNonce = (nonce) => plt.$nonce$ = nonce;
 
-export { Host as H, bootstrapLazy as b, h, promiseResolve as p, registerInstance as r, setNonce as s };
-//# sourceMappingURL=index-Bau8JtQz.js.map
+exports.Host = Host;
+exports.bootstrapLazy = bootstrapLazy;
+exports.getElement = getElement;
+exports.h = h;
+exports.promiseResolve = promiseResolve;
+exports.registerInstance = registerInstance;
+exports.setNonce = setNonce;
+//# sourceMappingURL=index-Bc9EaQF1.js.map
 
-//# sourceMappingURL=index-Bau8JtQz.js.map
+//# sourceMappingURL=index-Bc9EaQF1.js.map

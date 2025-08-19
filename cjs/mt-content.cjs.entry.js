@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-CtT_xTgK.js');
+var index = require('./index-Bc9EaQF1.js');
 
 const contentCss = ".sc-mt-content-h{height:100%;display:block}";
 

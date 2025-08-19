@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-CtT_xTgK.js');
+var index = require('./index-Bc9EaQF1.js');
 
 const quadroPictograma01Css = ".sc-mt-quadro-pictograma-01-h{--mt-quadro-pictograma-01-margin:0;margin:var(--mt-quadro-pictograma-01-margin);padding:1px;background-color:#ccdfdf;border:1px solid #9abec0;display:block}.mt-quadro-pictograma-01__container.sc-mt-quadro-pictograma-01{padding:4px 8px;border:1px solid #9abec0}.mt-quadro-pictograma-01__text.sc-mt-quadro-pictograma-01{color:#455a5a;font-family:\"Merriweather\", serif;font-weight:600;font-size:12px;line-height:1.5}";
 
@@ -9,7 +9,7 @@ const QuadroPictograma01 = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: '466f1528a104d7ace71cde1b7f7d61971b620741', class: "mt-quadro-pictograma-01" }, index.h("div", { key: '7eed57018e3603afbb28b3ff81086650300fa47f', class: "mt-quadro-pictograma-01__container" }, index.h("p", { key: '0e4f7176ef9c5cefa09ca3003c75d50617103084', class: "mt-quadro-pictograma-01__text" }, index.h("slot", { key: '8783e67b46a257dd44bbbada71a5833385d4d90e' })))));
+        return (index.h(index.Host, { key: '551a0c08b69e1da883628704f34ec71e2476a17c', class: "mt-quadro-pictograma-01" }, index.h("div", { key: 'd03e6a45e3ab168718bb12a253ca0d9b8361d07a', class: "mt-quadro-pictograma-01__container" }, index.h("p", { key: '2b8e5a600cbff56e20c558224aa44be99962aeae', class: "mt-quadro-pictograma-01__text" }, index.h("slot", { key: 'c67b8adf4efd38fe0f66179b10ccb86988e06a3c' })))));
     }
 };
 QuadroPictograma01.style = quadroPictograma01Css;

@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-CtT_xTgK.js');
+var index = require('./index-Bc9EaQF1.js');
 
 const floatedCss = ".sc-mt-floated-h{--mt-imagem-floated-image:null;--mt-imagem-floated-direction:null;--mt-imagem-floated-margin:null;display:block}.sc-mt-floated-h::after{content:\"\";display:table;clear:both}.sc-mt-floated-s>img{shape-outside:var(--mt-imagem-floated-image);float:var(--mt-imagem-floated-direction);margin:var(--mt-imagem-floated-margin);max-width:100%}";
 
@@ -8,8 +8,41 @@ const Floated = class {
     constructor(hostRef) {
         index.registerInstance(this, hostRef);
     }
+    get hostEl() { return index.getElement(this); }
+    titleSlotEl;
+    observer;
+    observeImageSrcChange(imgElement, callback) {
+        console.log(imgElement);
+        if (!(imgElement instanceof HTMLImageElement)) {
+            throw new Error('Target must be an <img> element');
+        }
+        this.observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
+                    callback(imgElement.src);
+                }
+            });
+        });
+        this.observer.observe(imgElement, {
+            attributes: true, // watch attributes
+            attributeFilter: ['src'], // only watch src
+        });
+        return this.observer; // so you can later disconnect if needed
+    }
+    componentDidLoad() {
+        if (this.titleSlotEl) {
+            const nodes = this.titleSlotEl.assignedElements({ flatten: true });
+            const img = nodes[0];
+            this.observeImageSrcChange(img, newSrc => {
+                this.hostEl.style.setProperty('--mt-imagem-floated-image', newSrc);
+            });
+        }
+    }
+    disconnectedCallback() {
+        this.observer.disconnect();
+    }
     render() {
-        return (index.h(index.Host, { key: 'd6a8688134f69eda0935b9f9bd8e52417367c66d', class: "mt-floated" }, index.h("div", { key: '03ddc87e7b513efab2c1c91660ecd776005bcdc7' }, index.h("slot", { key: 'ed52a73d5039fdba6d7d6d4059cff0814fb91ab2', name: "image-right" }), index.h("slot", { key: 'a184b21f39557f670e4b999b9bde32a8b3b06ca5', name: "text" }), index.h("slot", { key: 'b441ed44673abcbdfdaaa95c8b73b2fbbd132e33', name: "image-left" }))));
+        return (index.h(index.Host, { key: '3a1d0ef47e871a1c4240a1ce7cd42218f7040e37', class: "mt-floated" }, index.h("div", { key: '52592beec7a7b5c3bd362a4ac043eb3f1d5ca08a' }, index.h("slot", { key: '00290e57a5d404d27470ae42c562f7658d35b2c0', name: "image", ref: el => (this.titleSlotEl = el) }), index.h("slot", { key: '7671a290835a0d866fbd4720a89b3bcaea7bc8a5', name: "text" }))));
     }
 };
 Floated.style = floatedCss;

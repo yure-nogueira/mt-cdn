@@ -1,7 +1,7 @@
 import { h, Host } from "@stencil/core";
 export class Quadro02 {
     render() {
-        return (h(Host, { key: '9a1e907eb16ee938dd82d71fd1a9320991fc2827', class: "mt-quadro-02" }, h("div", { key: 'e41a6c829989ac0d649224fd7f9583b120103f23', class: "mt-quadro-02__left" }, h("slot", { key: '9a5583f975c3bba2a332176836785d88f3d9121d', name: "left" })), h("div", { key: 'cb86a4fdecd4414817f5380b1188271e306153d0', class: "mt-quadro-02__inner-container" }, h("h3", { key: '19efb2db4e821dc865c05d076864d3ca892e2608', class: "mt-quadro-02__title" }, h("slot", { key: '9af554f02844bd1b400205ea57e7cb0007f81a1d', name: "title" })), h("p", { key: 'ca564eda32ac8526bbbdf1000fceca6b1caefcad', class: "mt-quadro-02__text" }, h("slot", { key: 'ad9c6ccf56c992d089bb964e430218d19ba670e6', name: "text" })))));
+        return (h(Host, { key: '2a37a5f981ee27a18233f218cc493ee460182ab1', class: "mt-quadro-02" }, h("div", { key: '3e2f8bd02c4ba21ddfef2ed4cd45cd04ce6292be', class: "mt-quadro-02__left" }, h("slot", { key: 'bd52ab2f9fb7908247444dbabf88e4f3b4decbe0', name: "left" })), h("div", { key: '88059a39d1200dbe65a159987d787df9db95649a', class: "mt-quadro-02__inner-container" }, h("h3", { key: '47833f895f23f59da264fca5a53a20d28db3cecd', class: "mt-quadro-02__title" }, h("slot", { key: '7e6bf28a0cfa6caebcfbe2237189a128bb149c81', name: "title" })), h("p", { key: '6a53732e6901f02bc2ea7c9af7895bb0e6a0101b', class: "mt-quadro-02__text" }, h("slot", { key: '5deb10284005f5f26a2edb678502ad6b5606ff6f', name: "text" })))));
     }
     static get is() { return "mt-quadro-02"; }
     static get encapsulation() { return "scoped"; }

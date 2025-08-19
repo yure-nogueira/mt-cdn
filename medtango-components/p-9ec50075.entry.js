@@ -1,0 +1,2 @@
+import{r as a,h as o,H as r}from"./p-oGdjzoP8.js";const c=".sc-mt-background-h{--mt-background-padding:#fff;--mt-background-background-color:#fff;padding:var(--mt-background-padding);background-color:var(--mt-background-background-color)}";const d=class{constructor(o){a(this,o)}render(){return o(r,{key:"4d582935a8fa48cfa3364692662b6de4a094e680",class:"mt-background"},o("slot",{key:"99274f1f823b8c75dfb179b446025a0483000e9a"}))}};d.style=c;export{d as mt_background};
+//# sourceMappingURL=p-9ec50075.entry.js.map

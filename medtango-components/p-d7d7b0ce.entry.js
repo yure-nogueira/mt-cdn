@@ -1,0 +1,2 @@
+import{r as m,h as c,H as o}from"./p-oGdjzoP8.js";const t=".sc-mt-columns-h{margin:0 auto;display:block;column-count:var(--mt-columns-number);column-gap:var(--mt-column-gap);max-width:var(--mt-columns-max-width);--mt-columns-number:null;--mt-columns-max-width:100%;--mt-column-gap:40px}";const s=class{constructor(c){m(this,c)}render(){return c(o,{key:"c0c0414d879e7674eca7b7a74202d7cea633e206",class:"mt-columns"},c("slot",{key:"fb2b800e86f93ecbf2fdb2524f0c2bc98547939d"}))}};s.style=t;export{s as mt_columns};
+//# sourceMappingURL=p-d7d7b0ce.entry.js.map

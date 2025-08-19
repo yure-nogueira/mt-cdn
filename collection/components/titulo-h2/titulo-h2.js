@@ -1,7 +1,7 @@
 import { h, Host } from "@stencil/core";
 export class TituloH2 {
     render() {
-        return (h(Host, { key: '21ea9bcf3d33e9deb517c2fe5dc028c34dac9145', class: "mt-titulo-h2" }, h("h2", { key: 'a0ecfb8160ed7b73a7b35580b5ef5f3a086541f8' }, h("slot", { key: 'cd63a61203fc51cc7d2ef73b3d0a346fe78fe6c7' }))));
+        return (h(Host, { key: 'bcdd1f804287d4f3a15c487607ca11cffe55b67e', class: "mt-titulo-h2" }, h("h2", { key: '3b5a4a4b6158085f55dee769a6b424482af16edd' }, h("slot", { key: '5202a20cb2c247b0ef926fb2e3b429bba93298b4' }))));
     }
     static get is() { return "mt-titulo-h2"; }
     static get encapsulation() { return "scoped"; }

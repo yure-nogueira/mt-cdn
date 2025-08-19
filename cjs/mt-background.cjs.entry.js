@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-CtT_xTgK.js');
+var index = require('./index-Bc9EaQF1.js');
 
 const backgroundCss = ".sc-mt-background-h{--mt-background-padding:#fff;--mt-background-background-color:#fff;padding:var(--mt-background-padding);background-color:var(--mt-background-background-color)}";
 

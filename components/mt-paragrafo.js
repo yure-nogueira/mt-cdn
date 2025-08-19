@@ -8,7 +8,7 @@ const Paragrafo = /*@__PURE__*/ proxyCustomElement(class Paragrafo extends H {
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: 'aa08c67ad5f2be4482518b6f1b659207f05d9c88', class: "mt-paragrafo" }, h("p", { key: '0c476cab309d4f1209f072f9237387100c1cf07c' }, h("slot", { key: '0c98e68005e28bb4028feb45f7e2c52ccb577f58' }))));
+        return (h(Host, { key: '73c29392a6750897d37df9b794ef2c71cc214121', class: "mt-paragrafo" }, h("p", { key: '9fe17ec847b059788150bf8f29a48363ae7b39bf' }, h("slot", { key: '035b0e5ce9ac1d1897daf7ac80fa7a99efd37795' }))));
     }
     static get style() { return paragrafoCss; }
 }, [262, "mt-paragrafo"]);

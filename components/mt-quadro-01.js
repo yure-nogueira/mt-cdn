@@ -8,7 +8,7 @@ const Quadro01 = /*@__PURE__*/ proxyCustomElement(class Quadro01 extends H {
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: 'ceb988a6431a38a3a41be52c0f5ac2931f9a5611', class: "mt-quadro-01" }, h("div", { key: '5be1c11655b4b88a94e3e47932095201afcd7d6e', class: "mt-quadro-01__title" }, h("slot", { key: 'e25b2f5c088a9b3cf74c738a77fdbb7ffcc2ba8d', name: "title" })), h("p", { key: '221079f5cded082374b371fbcc7f12e5d8f827a5', class: "mt-quadro-01__text" }, h("slot", { key: '6b8466ca2f41330377d1091b6a67c0bf25983749', name: "text" }))));
+        return (h(Host, { key: '08c36304b0897ea65b51c015d01414ee718a2279', class: "mt-quadro-01" }, h("div", { key: '6fdb42bdd878d442e1d5ca7d123aaccbc504bfcf', class: "mt-quadro-01__title" }, h("slot", { key: 'b9f5be4539869454b8f193eeaf4a1c35d6ba35e7', name: "title" })), h("p", { key: 'fbc98c1c55edf734fe955412a5a0ba954b671bd5', class: "mt-quadro-01__text" }, h("slot", { key: '69bf82514749e24390ecf389b5180737d3211328', name: "text" }))));
     }
     static get style() { return quadro01Css; }
 }, [262, "mt-quadro-01"]);

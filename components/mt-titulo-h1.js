@@ -8,7 +8,7 @@ const TituloH1 = /*@__PURE__*/ proxyCustomElement(class TituloH1 extends H {
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: '10d953a093e52ac829617b0d4ef02be48f8091a0', class: "mt-titulo-h1" }, h("p", { key: '57feaa2aef50e79ed811eccbf2053653cf1c81bc', class: "mt-titulo-h1__pre-title" }, h("slot", { key: 'f8e96e71b55164e43477ea48923de44952160bd1', name: "pre-title" })), h("h1", { key: 'fa4be6ba9ff9f9dbc35bec7d3f5e9b5820b485f4', class: "mt-titulo-h1__title" }, h("slot", { key: 'd8115afa167fb64371eb413ba6db55d6a96a6c50', name: "title" })), h("h2", { key: '3158002a4ed880f1f8b628d3be17346251c888f3', class: "mt-titulo-h1__subtitle" }, h("slot", { key: '1bd408e02cfe35c6efd8c3a174138ffa23a940ff', name: "subtitle" }))));
+        return (h(Host, { key: '7dffcfdc694f573bf1aa3c25741f591e5e47cd4e', class: "mt-titulo-h1" }, h("p", { key: 'ddcb6f1064d74417611cdba9fd358b7230a3cc43', class: "mt-titulo-h1__pre-title" }, h("slot", { key: 'd2eae21c736ef584899f67b6b426fc168ffc306c', name: "pre-title" })), h("h1", { key: 'a69bf633d1f68fc2a3d98065674a38cab3d74acc', class: "mt-titulo-h1__title" }, h("slot", { key: '2d982d3c0d7cff27705fd7bc1728dec4843d7747', name: "title" })), h("h2", { key: 'cc2e62c4527e2c9c00bb5a812e19020879cf52cb', class: "mt-titulo-h1__subtitle" }, h("slot", { key: 'b931ebe2c4419dfefe41bda8a647ecf6c4555d65', name: "subtitle" }))));
     }
     static get style() { return tituloH1Css; }
 }, [262, "mt-titulo-h1"]);

@@ -1,7 +1,7 @@
 import { h, Host } from "@stencil/core";
 export class Page {
     render() {
-        return (h(Host, { key: 'bbdc43d0e3fa1c62816f158f8951706cf76b3d37' }, h("slot", { key: '82be28725a1abb4bb82ac67f640f8b9e2371d118' })));
+        return (h(Host, { key: 'aa6a031983b2093ded5e09b72db72dce84745db2' }, h("slot", { key: '8825309d50409c17de80f41599de30a9b6b0e08b' })));
     }
     static get is() { return "mt-page"; }
     static get encapsulation() { return "scoped"; }

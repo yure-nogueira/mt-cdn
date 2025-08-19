@@ -8,7 +8,7 @@ const Row = /*@__PURE__*/ proxyCustomElement(class Row extends H {
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: '79e87886a891a3aca13c5882442d6dc522a98e5a', class: "mt-row" }, h("slot", { key: '68e0f0c0e06a50f41e29eb91d9401ad6d988c294' })));
+        return (h(Host, { key: 'd43907695361ebdec337235e9b4337be8e5a9b92', class: "mt-row" }, h("slot", { key: '1fe88466e94acd3b0e41ef80c4c4681423df1751' })));
     }
     static get style() { return rowCss; }
 }, [262, "mt-row"]);

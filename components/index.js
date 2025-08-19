@@ -535,7 +535,11 @@ var setAccessor = (elm, memberName, oldValue, newValue, isSvg, flags, initialRen
       classList.remove(...oldClasses.filter((c) => c && !newClasses.includes(c)));
       classList.add(...newClasses.filter((c) => c && !oldClasses.includes(c)));
     }
-  } else if (memberName === "key") ; else {
+  } else if (memberName === "key") ; else if (memberName === "ref") {
+    if (newValue) {
+      newValue(elm);
+    }
+  } else {
     const isComplex = isComplexType(newValue);
     if ((isProp || isComplex && newValue !== null) && true) {
       try {
@@ -735,6 +739,7 @@ var removeVnodes = (vnodes, startIdx, endIdx) => {
     const vnode = vnodes[index];
     if (vnode) {
       const elm = vnode.$elm$;
+      nullifyVNodeRefs(vnode);
       if (elm) {
         {
           checkSlotFallbackVisibility = true;
@@ -927,6 +932,12 @@ var markSlotContentForRelocation = (elm) => {
     if (childNode.nodeType === 1 /* ElementNode */) {
       markSlotContentForRelocation(childNode);
     }
+  }
+};
+var nullifyVNodeRefs = (vNode) => {
+  {
+    vNode.$attrs$ && vNode.$attrs$.ref && vNode.$attrs$.ref(null);
+    vNode.$children$ && vNode.$children$.map(nullifyVNodeRefs);
   }
 };
 var insertBefore = (parent, newNode, reference) => {

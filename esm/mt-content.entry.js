@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-Bau8JtQz.js';
+import { r as registerInstance, h, H as Host } from './index-oGdjzoP8.js';
 
 const contentCss = ".sc-mt-content-h{height:100%;display:block}";
 

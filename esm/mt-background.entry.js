@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-Bau8JtQz.js';
+import { r as registerInstance, h, H as Host } from './index-oGdjzoP8.js';
 
 const backgroundCss = ".sc-mt-background-h{--mt-background-padding:#fff;--mt-background-background-color:#fff;padding:var(--mt-background-padding);background-color:var(--mt-background-background-color)}";
 

@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-Bau8JtQz.js';
+import { r as registerInstance, h, H as Host } from './index-oGdjzoP8.js';
 
 const columnsCss = ".sc-mt-columns-h{margin:0 auto;display:block;column-count:var(--mt-columns-number);column-gap:var(--mt-column-gap);max-width:var(--mt-columns-max-width);--mt-columns-number:null;--mt-columns-max-width:100%;--mt-column-gap:40px}";
 

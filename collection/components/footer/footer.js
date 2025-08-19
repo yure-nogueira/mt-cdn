@@ -1,7 +1,7 @@
 import { h, Host } from "@stencil/core";
 export class Footer {
     render() {
-        return (h(Host, { key: '7da9be8effb85128c179fe254f5f9da4558b3bd3', class: "mt-footer" }, h("div", { key: '7af698a9abf866008dd1b8678122a991d43c9ba1', class: "mt-container" }, h("span", { key: 'dbf07540c58cd8bedabe3e4c3dafb76a6c9ea66d', class: "mt-footer__left" }, h("slot", { key: 'd8d7bb9bf59dd0ec3465acadefd7eb5a3597748b', name: "start" })), h("span", { key: '847e7aaead6aabc7b973fa803366d49752b71722', class: "mt-footer__middle" }, h("slot", { key: 'c7c4909858ac147c142eb38b124708560e38b8ea' })), h("span", { key: '8add11263f05eef314b76792525536c75aab6d28', class: "mt-footer__right" }, h("slot", { key: '33fa96cac9a237b1a1235cf65dfbd88b00828187', name: "end" })))));
+        return (h(Host, { key: '30e9392e5f3a2f290fa455220299c328b72fba38', class: "mt-footer" }, h("div", { key: '31d4bb6c6976b7f3d36e3ca197d94088bc4d5b86', class: "mt-container" }, h("span", { key: '106f75171ed2c500116e3048bc2e339932b03cdc', class: "mt-footer__left" }, h("slot", { key: '3dd92615d47d53567cc595e88f1de3d0f275f8cd', name: "start" })), h("span", { key: '4180e989d20b2ea2264921445a65f2a3ba638351', class: "mt-footer__middle" }, h("slot", { key: '1c80ff920c8ea475c6d61e7709c9b4f78f52da31' })), h("span", { key: '84e1d69377cc84f4f1678582abc92636637a8205', class: "mt-footer__right" }, h("slot", { key: '6e40e1d597d9f5a3aa6ac3728fc39ba03cae7358', name: "end" })))));
     }
     static get is() { return "mt-footer"; }
     static get encapsulation() { return "scoped"; }
