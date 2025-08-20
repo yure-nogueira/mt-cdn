@@ -9,7 +9,7 @@ const TituloH3 = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: '78b9772f7b625624cf84af3e3bf0844babdfecae', class: "mt-titulo-h3" }, index.h("h3", { key: '2640809423df9340536208522c4462517f2196f3' }, index.h("slot", { key: '6899e6f5684985392d632d73d31134c344639513' }))));
+        return (index.h(index.Host, { key: '59a6e824123b51c751b756ca7ab7b3d5e1898d0c', class: "mt-titulo-h3" }, index.h("h3", { key: 'cf39fab4f80c5d16ab6fd211eeae2648e9ea8b45' }, index.h("slot", { key: '3cc254191507f42841b1812452211867d055185d' }))));
     }
 };
 TituloH3.style = tituloH3Css;

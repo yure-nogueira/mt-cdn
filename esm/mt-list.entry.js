@@ -7,7 +7,7 @@ const List = class {
         registerInstance(this, hostRef);
     }
     render() {
-        return (h(Host, { key: 'ba99bc94434c7ca7ba85f2aa373e29b33754e8a2', class: "mt-list" }, h("slot", { key: '03161ddeb963b70c7b0921bd0f8f9db6eb423c47' })));
+        return (h(Host, { key: 'd9eea8eee4f127567b6d016ee2e8e6bc774effb5', class: "mt-list" }, h("slot", { key: 'd76eaed6c9be5a76cf7b731488e0600aa5a3ba4c' })));
     }
 };
 List.style = listCss;

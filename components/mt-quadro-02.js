@@ -8,7 +8,7 @@ const Quadro02 = /*@__PURE__*/ proxyCustomElement(class Quadro02 extends H {
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: '2a37a5f981ee27a18233f218cc493ee460182ab1', class: "mt-quadro-02" }, h("div", { key: '3e2f8bd02c4ba21ddfef2ed4cd45cd04ce6292be', class: "mt-quadro-02__left" }, h("slot", { key: 'bd52ab2f9fb7908247444dbabf88e4f3b4decbe0', name: "left" })), h("div", { key: '88059a39d1200dbe65a159987d787df9db95649a', class: "mt-quadro-02__inner-container" }, h("h3", { key: '47833f895f23f59da264fca5a53a20d28db3cecd', class: "mt-quadro-02__title" }, h("slot", { key: '7e6bf28a0cfa6caebcfbe2237189a128bb149c81', name: "title" })), h("p", { key: '6a53732e6901f02bc2ea7c9af7895bb0e6a0101b', class: "mt-quadro-02__text" }, h("slot", { key: '5deb10284005f5f26a2edb678502ad6b5606ff6f', name: "text" })))));
+        return (h(Host, { key: '5eb8a34212aec40f8426b3bf3f8e261cb38e93ff', class: "mt-quadro-02" }, h("div", { key: 'f331a9dd8635485eccc6e783d07e2c06848a5156', class: "mt-quadro-02__left" }, h("slot", { key: '93f276e1c726e25f4c4810ef18dceb8de2fadb77', name: "left" })), h("div", { key: 'b9427f5cd4b03228491b70520938ab6d0d3dc36c', class: "mt-quadro-02__inner-container" }, h("h3", { key: '9f0ff0985d5551788b1778e09825b33aa20c96f5', class: "mt-quadro-02__title" }, h("slot", { key: 'a48791592c0c2357e4efae3a7f55a130180bd642', name: "title" })), h("p", { key: '9cd97a60d99693fe781f7ab6bc1dd447a411bad5', class: "mt-quadro-02__text" }, h("slot", { key: 'ee81fe01ea27b8c25140a99c832b8cc5d9561f8c', name: "text" })))));
     }
     static get style() { return quadro02Css; }
 }, [262, "mt-quadro-02"]);

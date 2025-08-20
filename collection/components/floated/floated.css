@@ -1,7 +1,5 @@
 :host {
-  --mt-imagem-floated-image: null;
-  --mt-imagem-floated-direction: null;
-  --mt-imagem-floated-margin: null;
+  --mt-imagem-floated-margin: 0 0 30px 0;
   display: block;
 }
 :host::after {
@@ -12,7 +10,7 @@
 
 ::slotted(img) {
   shape-outside: var(--mt-imagem-floated-image);
-  float: var(--mt-imagem-floated-direction);
+  float: right;
   margin: var(--mt-imagem-floated-margin);
   max-width: 100%;
 }

@@ -9,7 +9,7 @@ const Quadro01 = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: '08c36304b0897ea65b51c015d01414ee718a2279', class: "mt-quadro-01" }, index.h("div", { key: '6fdb42bdd878d442e1d5ca7d123aaccbc504bfcf', class: "mt-quadro-01__title" }, index.h("slot", { key: 'b9f5be4539869454b8f193eeaf4a1c35d6ba35e7', name: "title" })), index.h("p", { key: 'fbc98c1c55edf734fe955412a5a0ba954b671bd5', class: "mt-quadro-01__text" }, index.h("slot", { key: '69bf82514749e24390ecf389b5180737d3211328', name: "text" }))));
+        return (index.h(index.Host, { key: 'ce7eca7658284e8928f0db0536d415450d480fde', class: "mt-quadro-01" }, index.h("div", { key: '882ff6dcb87631d505b74641ba0101de822c8d6a', class: "mt-quadro-01__title" }, index.h("slot", { key: 'c2d0d453d2b056dd0d20d5c334dcd8376c7c14f1', name: "title" })), index.h("p", { key: '4752c30bf7ef6493a17c5186c8a05d947d2b512c', class: "mt-quadro-01__text" }, index.h("slot", { key: 'd3a4ad3f2603832aecdf415059f5047fffb8d416', name: "text" }))));
     }
 };
 Quadro01.style = quadro01Css;

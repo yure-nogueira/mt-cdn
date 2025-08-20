@@ -8,7 +8,7 @@ const Page = /*@__PURE__*/ proxyCustomElement(class Page extends H {
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: 'aa6a031983b2093ded5e09b72db72dce84745db2' }, h("slot", { key: '8825309d50409c17de80f41599de30a9b6b0e08b' })));
+        return (h(Host, { key: 'a238ea9e3d20359ff5fd32f746486ee936bcc5c8' }, h("slot", { key: '59cd25380c7b8f88fa3de07358a89edab81764de' })));
     }
     static get style() { return pageCss; }
 }, [262, "mt-page"]);

@@ -9,7 +9,7 @@ const TituloH1 = class {
         index.registerInstance(this, hostRef);
     }
     render() {
-        return (index.h(index.Host, { key: '7dffcfdc694f573bf1aa3c25741f591e5e47cd4e', class: "mt-titulo-h1" }, index.h("p", { key: 'ddcb6f1064d74417611cdba9fd358b7230a3cc43', class: "mt-titulo-h1__pre-title" }, index.h("slot", { key: 'd2eae21c736ef584899f67b6b426fc168ffc306c', name: "pre-title" })), index.h("h1", { key: 'a69bf633d1f68fc2a3d98065674a38cab3d74acc', class: "mt-titulo-h1__title" }, index.h("slot", { key: '2d982d3c0d7cff27705fd7bc1728dec4843d7747', name: "title" })), index.h("h2", { key: 'cc2e62c4527e2c9c00bb5a812e19020879cf52cb', class: "mt-titulo-h1__subtitle" }, index.h("slot", { key: 'b931ebe2c4419dfefe41bda8a647ecf6c4555d65', name: "subtitle" }))));
+        return (index.h(index.Host, { key: '81de1d22eeb0fce6794fcd524f1ed158962d93ef', class: "mt-titulo-h1" }, index.h("p", { key: '494735c2a4a91ab959b5abbfcc23a2f588110ca3', class: "mt-titulo-h1__pre-title" }, index.h("slot", { key: '080a70237fdf21a58155494b8f87f802b1625e6d', name: "pre-title" })), index.h("h1", { key: 'b9e3457b2dee7e53cf54a64c0768e3200953bb47', class: "mt-titulo-h1__title" }, index.h("slot", { key: '3d41ebf33dd6c6ea752b47794b490833968b83a4', name: "title" })), index.h("h2", { key: 'ca589900d4b0ff5d8ab2efea725ddf210ffd6a64', class: "mt-titulo-h1__subtitle" }, index.h("slot", { key: '864c6802320e526aa91c3b08e0e31b8fef32cb9d', name: "subtitle" }))));
     }
 };
 TituloH1.style = tituloH1Css;

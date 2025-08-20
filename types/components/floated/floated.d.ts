@@ -1,8 +1,8 @@
 export declare class Floated {
     hostEl: HTMLElement;
     private titleSlotEl;
-    observer: any;
-    observeImageSrcChange(imgElement: any, callback: any): any;
+    private observer;
+    observeImageSrcChange(imgElement: any, callback: any): MutationObserver;
     componentDidLoad(): void;
     disconnectedCallback(): void;
     render(): any;

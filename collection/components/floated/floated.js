@@ -4,7 +4,6 @@ export class Floated {
     titleSlotEl;
     observer;
     observeImageSrcChange(imgElement, callback) {
-        console.log(imgElement);
         if (!(imgElement instanceof HTMLImageElement)) {
             throw new Error('Target must be an <img> element');
         }
@@ -16,17 +15,19 @@ export class Floated {
             });
         });
         this.observer.observe(imgElement, {
-            attributes: true, // watch attributes
-            attributeFilter: ['src'], // only watch src
+            attributes: true,
+            attributeFilter: ['src'],
         });
-        return this.observer; // so you can later disconnect if needed
+        return this.observer;
     }
     componentDidLoad() {
         if (this.titleSlotEl) {
             const nodes = this.titleSlotEl.assignedElements({ flatten: true });
             const img = nodes[0];
+            const initialSrc = nodes[0].getAttribute('src');
+            this.hostEl.style.setProperty('--mt-imagem-floated-image', `url('${initialSrc}')`);
             this.observeImageSrcChange(img, newSrc => {
-                this.hostEl.style.setProperty('--mt-imagem-floated-image', newSrc);
+                this.hostEl.style.setProperty('--mt-imagem-floated-image', `url('${newSrc}')`);
             });
         }
     }
@@ -34,7 +35,7 @@ export class Floated {
         this.observer.disconnect();
     }
     render() {
-        return (h(Host, { key: '3a1d0ef47e871a1c4240a1ce7cd42218f7040e37', class: "mt-floated" }, h("div", { key: '52592beec7a7b5c3bd362a4ac043eb3f1d5ca08a' }, h("slot", { key: '00290e57a5d404d27470ae42c562f7658d35b2c0', name: "image", ref: el => (this.titleSlotEl = el) }), h("slot", { key: '7671a290835a0d866fbd4720a89b3bcaea7bc8a5', name: "text" }))));
+        return (h(Host, { key: '8da4cbc964b6ed4add2de1fe31dd10779cd33895', class: "mt-floated" }, h("slot", { key: '95720eb8b00b8a0738ab2016a346d2292e1bc5fc', name: "image", ref: el => (this.titleSlotEl = el) }), h("slot", { key: '0fa26284867d1ee9139c9cb440293efbae51c43f', name: "text" })));
     }
     static get is() { return "mt-floated"; }
     static get encapsulation() { return "scoped"; }

@@ -7,7 +7,7 @@ const TituloResumo = class {
         registerInstance(this, hostRef);
     }
     render() {
-        return (h(Host, { key: '82c6c9945226d9e196cd695233dd059dfcaf961d', class: "mt-titulo-resumo" }, h("h6", { key: '08402ec9efc98623ca8ed7151e99248b25f68084' }, h("slot", { key: '4ddfd54f571c213787dcb2f14bdcdb8fa96103b4' }))));
+        return (h(Host, { key: '64aa45361cf9a5010afb337c147b7b47a2fbb001', class: "mt-titulo-resumo" }, h("h6", { key: '3592f509e8342ee182b1715195b8e355f19b0a15' }, h("slot", { key: 'ef59429fb8764911a3a6aa62a60e289cd175411f' }))));
     }
 };
 TituloResumo.style = tituloResumoCss;

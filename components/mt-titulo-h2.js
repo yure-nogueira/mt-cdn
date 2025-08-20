@@ -8,7 +8,7 @@ const TituloH2 = /*@__PURE__*/ proxyCustomElement(class TituloH2 extends H {
         this.__registerHost();
     }
     render() {
-        return (h(Host, { key: 'bcdd1f804287d4f3a15c487607ca11cffe55b67e', class: "mt-titulo-h2" }, h("h2", { key: '3b5a4a4b6158085f55dee769a6b424482af16edd' }, h("slot", { key: '5202a20cb2c247b0ef926fb2e3b429bba93298b4' }))));
+        return (h(Host, { key: '52c772701adb2a62e0bff8956cbbbbca8121ee04', class: "mt-titulo-h2" }, h("h2", { key: '896f7c4fe7e1c108d241e3fdb1ec17d24cff7519' }, h("slot", { key: 'b282ff9a5eff2c60d5425242a78e59a93a5d5093' }))));
     }
     static get style() { return tituloH2Css; }
 }, [262, "mt-titulo-h2"]);

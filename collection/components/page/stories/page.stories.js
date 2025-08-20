@@ -79,16 +79,7 @@ export const Default = {
         </mt-quadro-pictograma-01>
 
         <mt-floated>
-          <img
-            slot="image"
-            src="/1.png"
-            alt="image"
-            style="
-                  --mt-imagem-floated-image: url(/1.png);
-                  --mt-imagem-floated-direction: right;
-                  --mt-imagem-floated-margin: 50px 0 0 0;
-                "
-          />
+          <img slot="image" src="/1.png" alt="image" />
           <p slot="text">
             Sequam rerum quae ius iliquias nonse conese re quiam harcimaximus que id
             eliquatia dolest ipsam, is molorpore nihicto odis minumr eliquatia dolest
