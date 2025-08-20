@@ -80,7 +80,7 @@ export const Default = {
 
         <mt-floated>
           <img slot="image" src="/1.png" alt="image" />
-          <p slot="text">
+          <p>
             Sequam rerum quae ius iliquias nonse conese re quiam harcimaximus que id
             eliquatia dolest ipsam, is molorpore nihicto odis minumr eliquatia dolest
             ipsam, is molorpore. Sequam rerum quae ius iliquias nonse conese re quiam

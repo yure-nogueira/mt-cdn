@@ -42,7 +42,7 @@ const Floated = /*@__PURE__*/ proxyCustomElement(class Floated extends H {
         this.observer.disconnect();
     }
     render() {
-        return (h(Host, { key: '8da4cbc964b6ed4add2de1fe31dd10779cd33895', class: "mt-floated" }, h("slot", { key: '95720eb8b00b8a0738ab2016a346d2292e1bc5fc', name: "image", ref: el => (this.titleSlotEl = el) }), h("slot", { key: '0fa26284867d1ee9139c9cb440293efbae51c43f', name: "text" })));
+        return (h(Host, { key: '8da4cbc964b6ed4add2de1fe31dd10779cd33895', class: "mt-floated" }, h("slot", { key: '95720eb8b00b8a0738ab2016a346d2292e1bc5fc', name: "image", ref: el => (this.titleSlotEl = el) }), h("slot", { key: '1cbb4ce5988ceb399573b544ff9998478727e596' })));
     }
     static get style() { return floatedCss; }
 }, [262, "mt-floated"]);

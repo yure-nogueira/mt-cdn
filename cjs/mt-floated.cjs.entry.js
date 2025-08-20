@@ -43,7 +43,7 @@ const Floated = class {
         this.observer.disconnect();
     }
     render() {
-        return (index.h(index.Host, { key: '8da4cbc964b6ed4add2de1fe31dd10779cd33895', class: "mt-floated" }, index.h("slot", { key: '95720eb8b00b8a0738ab2016a346d2292e1bc5fc', name: "image", ref: el => (this.titleSlotEl = el) }), index.h("slot", { key: '0fa26284867d1ee9139c9cb440293efbae51c43f', name: "text" })));
+        return (index.h(index.Host, { key: '8da4cbc964b6ed4add2de1fe31dd10779cd33895', class: "mt-floated" }, index.h("slot", { key: '95720eb8b00b8a0738ab2016a346d2292e1bc5fc', name: "image", ref: el => (this.titleSlotEl = el) }), index.h("slot", { key: '1cbb4ce5988ceb399573b544ff9998478727e596' })));
     }
 };
 Floated.style = floatedCss;
